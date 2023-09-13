@@ -1,0 +1,188 @@
+/***
+
+====================================================================
+    Project Section
+====================================================================
+
+***/
+
+.project-section {
+    position: relative;
+    padding: 100px 0 190px;
+    background-color: #212121;
+    .outer-box{
+        margin: 0 -400px;
+        @include for-xxl{
+            margin: 0 -200px;
+        }
+        @include media-breakpoint-down(xl){
+            margin: 0 -100px;
+        }
+        @include media-breakpoint-down(lg) {
+            margin: 0;
+        }
+    }
+    .sec-title{
+        margin-bottom: 70px;
+    }
+}
+
+.project-block {
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        padding-bottom: 50px;
+        &:hover {
+            .image-box{
+                .image{
+                    &:before{
+                        height: 100%;
+                    }
+                    a img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .icon{
+                background-color: var(--bg-theme-color2);
+                color: var(--theme-color-dark);
+            }
+        }
+    }
+    .image-box {
+        position: relative;
+        overflow: hidden;
+        transition: all 300ms ease;
+        .image {
+            position: relative;
+            margin-bottom: 0px;
+            &::before{
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 0;
+                z-index: 2;
+                pointer-events: none;
+                background: linear-gradient(transparent, #261c58);
+                content: "";
+                transition: all 300ms ease;
+            }
+            a {
+                display: block;
+                width: 100%;
+            }
+            img{
+                transition: all 300ms ease;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    .content-box{
+        position: absolute;
+        right: 0;
+        left: 35px;
+        bottom: 0;
+        padding: 30px 35px 25px;
+        background-color: #fff;
+        z-index: 3;
+        border-bottom: 5px solid var(--theme-color1);
+        @include media-breakpoint-down(sm){
+            left: 0;
+        }
+        .title{
+            font-weight: 700;
+            margin-bottom: 0;
+            a:hover{
+                color: var(--theme-color1);
+            }
+        }
+        .cat{
+            font-size: 14px;
+            font-weight: 400;
+            @include title-font;
+            color: var(--theme-color1);
+        }
+        .icon{
+            position: absolute;
+            right: 28px;
+            bottom: 0;
+            height: 65px;
+            width: 80px;
+            font-size: 17px;
+            color: #fff;
+            background-color: var(--bg-theme-color1);
+            @include flex-center;
+            i:before{
+                position: relative;
+                display: block;
+                font-weight: 200;
+                transform: rotate(35deg);
+            }
+            @include media-breakpoint-down(lg){
+                right: 10px;
+                height: 45px;
+                width: 50px;
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Project Section Two
+====================================================================
+
+***/
+
+.project-section-two{
+    position: relative;
+    padding: 100px 0 120px;
+    .outer-box{
+        margin: 0 -400px;
+        @include for-xxl{
+            margin: 0 -100px;
+        }
+        @include media-breakpoint-down(lg){
+            margin: 0;
+        }
+    }
+    .sec-title{
+        margin-bottom: 70px;
+        .text{
+            margin-top: 60px;
+            padding-left: 15px;
+            max-width: 400px;
+            @include media-breakpoint-down(lg){
+                max-width: 100%;
+                padding-left: 0;
+                margin-top: 30px;
+            }
+        }
+    }
+    .project-block{
+        .inner-box {
+            &:hover {
+                .content-box{
+                    border-bottom-color: var(--theme-color1);
+                    .icon{
+                        background-color: var(--bg-theme-color1);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+        .content-box{
+            border-bottom-color: #f9f9f9;
+            .icon{
+                color:#000;
+                background-color: #f9f9f9;
+                font-weight: 900;
+            }
+        }
+    }
+}

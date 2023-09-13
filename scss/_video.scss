@@ -1,0 +1,75 @@
+/*** 
+
+====================================================================
+    Video Section
+====================================================================
+
+***/
+
+.video-section {
+    position: relative;
+    padding: 340px 0 320px;
+    text-align: center;
+    @include media-breakpoint-down(xl){
+        padding: 200px 0;
+    }
+    .bg{
+        &::before {
+            @include overlay;
+            opacity: .54;
+            background-color: #181818;
+            content: "";
+        }
+    }
+    .play-btn-box{
+        position: relative;
+        height: 505px;
+        width: 505px;
+        border-radius: 50%;
+        @include flex-center;
+        margin: 0 auto;
+        @include media-breakpoint-down(lg){
+            height: 300px;
+            width: 300px;
+            &:before{
+                left: 0 !important;
+                margin: 0 !important;
+                right: 0 !important;
+            }
+            &::after{display: none;}
+        }
+        &:before{
+            @include overlay;
+            left: -50%;
+            margin-left: 100px;
+            background-color: var(--theme-color-dark);
+            border-radius: 50%;
+            opacity: .8;
+            content: "";
+        }
+        &:after{
+            @include overlay;
+            left: auto;
+            right: -50%;
+            margin-right: 100px;
+            border: 4px solid #fff;
+            border-radius: 50%;
+            content: "";
+        }
+    }
+
+    .play-btn{
+        z-index: 2;
+    }
+    &.style-two{
+        padding:50px 0;
+        .bg {
+            right: 0;
+            max-width: 1590px;
+            margin: 0 auto;
+            &:before{
+                display: none;
+            }
+        }
+    }
+}

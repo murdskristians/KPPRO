@@ -1,0 +1,125 @@
+/*** 
+
+====================================================================
+    Pricing Section
+====================================================================
+
+***/
+
+.pricing-section {
+    position: relative;
+    padding: 120px 0 90px;
+    .bg-shape{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 574px;
+        height: 553px;
+        background-image: url(../images/icons/bg-shape3.png);
+    }
+    .icon-plane-6{
+        left: -300px;
+        top: 260px;
+    }
+}   
+
+.pricing-section .title-column{
+    position: relative;
+    .list-style-three {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .text{
+        font-size: 16px;
+        line-height: 30px;
+        color: #7c858c;
+    }
+}
+
+
+.pricing-block {
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        padding: 60px 60px;
+        background-color: #ffffff;
+        box-shadow: 0 10px 60px rgba(0, 0, 0, 0.10);
+        transition: all 300ms ease;
+        @include media-breakpoint-down(sm){
+            padding: 60px 30px;
+        }
+        &:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0px 5px rgba(0, 0, 0, 0.10);
+        }
+    }
+    .title {
+        position: relative;
+        display: block;
+        font-size: 20px;
+        line-height: 1.2em;
+        color: var(--theme-color1);
+        font-weight: 700;
+        @include title-font;
+        letter-spacing: -.04em;
+        margin-bottom: 8px;
+    }
+    .price-box {
+        position: relative;
+        display: flex;
+        padding-bottom: 0px;
+        border-bottom: 1px solid #dfe8ee;
+        .price {
+            display: block;
+            font-size: 50px;
+            font-weight: 500;
+            color: #0b3b5e;
+            @include text-font;
+            letter-spacing: -.04em;
+            sup{
+                font-size: 60%;
+            }
+        }
+        .validaty{
+            position: relative;
+            top:14px;
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #7c858c;
+            margin-left: 10px;
+        }
+    }
+    .image{
+        position: relative;
+        margin-bottom: 0;
+    }
+    .features {
+        position: relative;
+        margin-bottom: 25px;
+        li {
+            position: relative;
+            display: block;
+            font-size: 14px;
+            line-height: 26px;
+            color: #7c858c;
+            font-weight: 400;
+            padding-left: 25px;
+            margin-bottom: 10px;
+            &:before {
+                position: absolute;
+                left: 0;
+                top: 0px;
+                font-size: 16px;
+                line-height: 26px;
+                content: "\f058";
+                font-family: 'Font Awesome 6 Pro';
+                color: var(--theme-color1);
+                font-weight: 900;
+            }
+            a {
+                color: #848484;
+            }
+        }
+    }
+}

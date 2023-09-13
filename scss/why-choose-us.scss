@@ -1,0 +1,709 @@
+/***
+
+====================================================================
+    Why Choose Us
+====================================================================
+
+***/
+
+.why-choose-us{
+    position: relative;
+    padding: 120px 0 90px;
+    .icon-plane-3{
+        left: -350px;
+        bottom: 130px;
+    }
+    .outer-box{
+        position: relative;
+        .float-image{
+            position: absolute;
+            top: 120px;
+            right: -410px;
+            img{
+                position: relative
+            }
+            &:before{
+                position: absolute;
+                left: 160px;
+                top: -45px;
+                height: 700px;
+                width: 515px;
+                border: 10px solid #ebebeb;
+                content: "";
+            }
+            @include media-breakpoint-down(lg){
+                display: none;
+            }
+        }
+    }
+
+    .content-column{
+        margin-bottom: 40px;
+        .inner-column{
+            position: relative;
+        }
+        .sec-title{
+            margin-bottom: 45px;
+        }
+    }
+}
+
+// Feature Block
+.feature-block {
+    position: relative;
+    margin-bottom: 30px;
+    .inner-box{
+        position: relative;
+        padding: 20px 20px 20px;
+        background-color: #fff;
+        text-align: center;
+        box-shadow: 0 14px 43px rgba(0,0,0,.08);
+        &:hover{
+            .icon{
+                transform: scale(-1) rotate(180deg);
+                color: var(--theme-color2);
+            }
+        }
+    }
+    .count{
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+        text-align: center;
+        font-size: 90px;
+        line-height: 1em;
+        font-weight: 700;
+        opacity: .2;
+        @include title-font;
+        @include text-outline(var(--theme-color-dark));
+    }
+    .icon{
+        position: relative;
+        display: block;
+        font-size: 78px;
+        line-height: 1em;
+        color: var(--theme-color1);
+        transition: all 300ms ease;
+    }
+    .title{
+        position: relative;
+        padding: 20px 0;
+        letter-spacing: -.01em;
+    }
+}
+
+/*================================
+    Progress Bar
+=================================*/
+
+.skills {
+    position: relative;
+    margin-bottom: 50px;
+    .skill-item {
+        position: relative;
+        margin-bottom: 35px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+        .skill-header {
+            position: relative;
+            margin-bottom: 12px;
+            .skill-title {
+                font-size: 14px;
+                color: var(--theme-color-dark);
+                font-weight: 700;
+                @include title-font;
+            }
+        }
+        .skill-bar {
+            background-color: #fff;
+            position: relative;
+            width: 100%;
+            height: 6px;
+            border-radius: 6px;
+            .bar-inner {
+                position: relative;
+                width: 100%;
+                height: 6px;
+                .bar {
+                    position: absolute;
+                    left: 0px;
+                    top: 0px;
+                    height: 6px;
+                    width: 0px;
+                    transition: all 3000ms ease;
+                    background-color: var(--bg-theme-color1);
+                }
+                .skill-percentage {
+                    position: absolute;
+                    right: 0;
+                    bottom: 100%;
+                    margin-bottom: 17px;
+                    font-size: 12px;
+                    line-height: 16px;
+                    padding: 5px 7px;
+                    font-weight: 500;
+                    color: #212121;
+                    transform: translateX(50%);
+                    background-color: var(--theme-color2);
+                    &:before{
+                        position: absolute;
+                        left: 50%;
+                        top:100%;
+                        margin-left: -9px;;
+                        border-left: 9px solid transparent;
+                        border-right: 9px solid transparent;
+                        border-top: 10px solid var(--theme-color2);
+                        content: "";
+                    }
+                }
+            }
+        }
+    }
+}
+
+/***
+
+====================================================================
+    Why Choose Us
+====================================================================
+
+***/
+
+.why-choose-us-two{
+    position: relative;
+    padding: 80px 0 35px;
+    background-color: #f8f5f1;
+    .icon-plane-5{
+        left: -280px;
+        bottom: 40px
+    }
+    .left-bg-shape{
+        @include overlay;
+        &:before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 137px;
+            background-color: var(--theme-color-dark);
+            clip-path: polygon(0 0, 100% 0, 20% 100%, 0 100%);
+            overflow: visible;
+            content: "";
+        }
+        &:after{
+            position: absolute;
+            top: 70px;
+            left: 110px;
+            margin-left: 30px;
+            height: 255px;
+            width: 10px;
+            background-color: var(--bg-theme-color2);
+            transform: skew(-10deg);
+            z-index: 99;
+            content: "";
+        }
+        @include for-xxl{
+            display: none;
+        }
+    }
+    .right-bg-image{
+        position: absolute;
+        right: -125px;
+        left: 55.4%;
+        top: 0;
+        height: 100%;
+        max-width: 830px;
+        @include media-breakpoint-down(xl){
+            display: none;
+        }
+        &:before{
+            position: absolute;
+            top: 75px;
+            bottom: 75px;
+            left: 5px;
+            width: 100px;
+            background-color: var(--bg-theme-color1);
+            transform: skew(-10deg);
+            content: "";
+        }
+        img{
+            height: 100%;
+            object-fit: cover;
+            clip-path: polygon(13% 0, 100% 0, 100% 100%, 0 100%);
+        }
+    }
+
+    .image-column{
+        .image-box{
+            position: relative;
+            margin-right: -230px;
+            padding-left: 75px;
+            margin-top: -20px;
+            @include media-breakpoint-down(xl){
+                margin: 0;
+                padding-left: 0;
+                margin-top: 30px;
+                text-align: center;
+                width: 100%;
+                .image{
+                    display: inline-block;
+                }
+            }
+            .image{
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .content-column{
+        margin-bottom: 50px;
+        .inner-column{
+            position: relative;
+        }
+        .sec-title{
+            margin-bottom: 60px;
+        }
+    }
+
+    .skills-outer{
+        position: relative;
+        padding-left: 250px;
+        @include media-breakpoint-down(md){
+            padding-left: 0;
+        }
+        .skills {
+            .skill-item {
+                .skill-bar {
+                    .bar-inner{
+                        .skill-percentage{
+                            background-color: var(--theme-color1);
+                            color: #fff;
+                            &:before{
+                                border-top-color: var(--theme-color1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .exp-box{
+            position: absolute;
+            left: 0;
+            top: -20px;
+            width: 200px;
+            background-color: #fff;
+            padding: 35px 20px 20px;
+            min-height: 185px;
+            @include media-breakpoint-down(md){
+                position: relative;
+                top: 0;
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin-bottom: 50px;
+            }
+            .count{
+                position: relative;
+                display: inline-block;
+                margin-bottom: 5px;
+                &:before {
+                    position: absolute;
+                    left: 0;
+                    top: 32px;
+                    font-size: 80px;
+                    @include title-font;
+                    font-weight: 700;
+                    color: var(--theme-color1);
+                    content: attr(data-text);
+                    @include text-outline(#000);
+                    opacity: .4;
+                }
+                .txt{
+                    font-size: 80px;
+                    line-height: 1em;
+                    background-image: url(../images/resource/count-bg.jpg);
+                    @include title-font;
+                    font-weight: 700;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+            .title{
+                font-size: 16px;
+                letter-spacing: -.01em;
+            }
+        }
+    }
+}
+
+
+
+/*** 
+
+====================================================================
+    Why Choose Us Three
+====================================================================
+
+***/
+
+.why-choose-us-three{
+    position: relative;
+    padding: 120px 0 70px;
+    background-color: #f8f5f1;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 0;
+    }
+    .bg-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 50%;
+        @include background;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+    .bg-shape{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 50%;
+        @include background;
+        @include media-breakpoint-down(lg) {
+            display: none;
+        }
+        .shape{
+            position: absolute;
+            left: 0;
+            right: 0px;
+            height: 100%;
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: cover;
+            margin-right: -275px;
+        }
+    }
+
+    .float-image {
+        position: absolute;
+        left: -360px;
+        bottom: -40px;
+        z-index: 9;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+
+    .content-column {
+        position: relative;
+        .sec-title {
+            margin-bottom: 40px;
+            .sub-title{
+                margin-bottom: 10px;
+            }
+            .text{
+                color: #767676;
+                font-size: 18px;
+                line-height: 34px;
+                padding-right: 70px;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .image-column{
+        position: relative;
+        @include media-breakpoint-down(lg){
+            margin-top: 30px;
+        }
+        .image-box.hide-desktop{
+            display: none;
+            position: absolute;
+            left: -5px;
+            right: -5px;
+            top: 0;
+            height: 100%;
+            @include media-breakpoint-down(lg){
+                display: block;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .inner-column{
+            padding: 160px 0;
+            display: flex;
+            justify-content: space-between;
+            @include media-breakpoint-down(lg){
+                flex-direction: column;
+                align-items: center;
+                padding: 120px 0 50px;
+            }
+        }
+        
+        .video-box{
+            position: relative;
+            @include media-breakpoint-down(lg){
+                transform: scale(.7);
+            }
+            .arrow{
+                position: relative;
+                top: 5px;
+                right: 140px;
+            }
+        }
+
+        .info-box {
+            position: relative;
+            display: flex;
+            height: 100%;
+            background: #ffffff;
+            padding: 30px 30px 30px 30px;
+            border-radius: 5px;
+            min-width: 270px;
+            left: -20px;
+            @include Shadow;
+            @include media-breakpoint-down(lg){
+                left: 0;
+            }
+            &:before {
+                position: absolute;
+                right: 0;
+                top: 100%;
+                margin-top: -5px;
+                border-left: 40px solid transparent;
+                border-top: 30px solid #ffffff;
+                content: "";
+            }
+            .icon {
+                position: absolute;
+                left: 30px;
+                top: 30px;
+                color: var(--theme-color1);
+                font-size: 62px;
+                line-height: 65px;
+            }
+            strong {
+                position: relative;
+                padding-left: 85px;
+                font-size: 18px;
+                line-height: 26px;
+                color: var(--theme-color-dark);
+                font-weight: 700;
+                display: block;
+                min-height: 65px;       
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+.feature-block-five{
+    position: relative;
+    margin-bottom: 40px;
+    .inner-box {
+        position: relative;
+        &:hover{
+            .icon{
+                color: var(--theme-color2);
+            }
+        }
+    }
+    .icon {
+        position: relative;
+        display: block;
+        font-size: 64px;
+        color: var(--theme-color1);
+        line-height: 1em;
+        transition: all 300ms ease;
+        margin-bottom: 5px;
+        &::after{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+            height: 65px;
+            width: 65px;
+            background-color: #efeae4;
+            content: "";
+            border-radius: 50%;
+            z-index: -1;
+        }
+    }
+    .title {
+        position: relative;
+        font-size: 20px;
+        line-height: 30px;
+        font-weight: 700;
+        margin-bottom:20px;
+        @include media-breakpoint-down(lg){
+            br{display: none}
+        }
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 30px;
+        color: #9898a0;
+        @include media-breakpoint-down(lg){
+            br{display: none}
+        }
+    }
+}
+
+
+/*** 
+
+====================================================================
+    Why Choose Us Four
+====================================================================
+
+***/
+
+.why-choose-us-four{
+    position: relative;
+    overflow: hidden;
+    padding: 110px 0 70px;
+    z-index: 1;
+    @include media-breakpoint-down(lg){
+        padding: 120px 0 80px;
+    }
+    .bg-image{
+        &:before{
+            @include overlay;
+            opacity: .97;
+            background-color: #ebebeb;
+            content: "";
+        }
+    }
+    .bg-shape {
+        position: absolute;
+        right: 50%;
+        top: 0;
+        height: 767px;
+        width: 905px;
+        margin-right: 50px;
+        background-image: url(../images/icons/bg-shape2.png);
+        content: "";
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+    }
+    .content-column {
+        position: relative;
+        @include media-breakpoint-down(lg){
+            order: 0 !important;
+        }
+        .sec-title {
+            margin-bottom: 45px;
+            .sub-title{
+                margin-bottom: 30px;
+            }
+        }
+        .skills{
+            margin-bottom: 40px;
+        }
+        .ceo-info{
+            position: relative;
+            padding-left: 140px;
+            padding-top: 15px;
+            .sign{
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 120px;
+                min-height: 60px;
+                padding-right: 20px;
+                margin-right: 20px;
+                padding-top: 10px;
+                border-right: 1px solid #cccccc;
+                overflow: hidden;
+            }
+            .name{
+                display: block;
+                font-size: 16px;
+                line-height: 1em;
+                font-weight: 700;
+                color: var(--theme-color-dark);
+                margin-bottom: 5px;
+            }
+            .designation{
+                display: block;
+                font-size: 12px;
+                color: #4c4d56;
+                line-height: 1em;
+            }
+        }
+    }
+
+    .image-column{
+        position: relative;
+        @include media-breakpoint-down(lg){
+            display: none;
+        }
+        .inner-column{
+            position: relative;
+            display: flex;
+            .image{
+                margin-top: -60px;
+                margin-bottom: -70px;
+            }
+        }
+        .exp-box{
+            position: absolute;
+            left: 210px;
+            top: 80px;
+            height: 140px;
+            width: 140px;
+            z-index: 2;
+            background-color: #fff;
+            border-radius: 50%;
+            @include flex-center;
+            flex-direction: column;
+            &::before{
+                position: absolute;
+                left: 10px;
+                top: 10px;
+                bottom: 10px;
+                right: 10px;
+                border: 2px dashed var(--theme-color2);
+                border-radius: 50%;
+                z-index: 2;
+                content: "";
+            }
+            &:after{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                height: 40px;
+                width: 40px;
+                z-index: -1;
+                background-color: #fff;
+                content: ""
+            }
+            .count{
+                display: block;
+                font-size: 40px;
+                @include title-font;
+                text-transform: uppercase;
+                color: var(--theme-color1);
+                font-weight: 600;
+            }
+            .title{
+                display: block;
+                font-size: 14px;
+                @include title-font;
+                font-weight: 600;
+                color: var(--theme-color-dark);
+                margin-top: 10px;
+            }
+        }
+    }
+}

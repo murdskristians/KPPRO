@@ -1,0 +1,322 @@
+/*** 
+
+====================================================================
+		Call To Action
+====================================================================
+
+***/
+
+.call-to-action{
+    position: relative;
+    z-index: 2;
+    &.pull-y{
+        margin-top: -80px;
+        margin-bottom: -60px;
+    }
+    .outer-box{
+        background-color: var(--bg-theme-color1);
+        display: flex;
+        justify-content: space-between;
+        padding: 40px 55px;
+        @include media-breakpoint-down(lg){
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .title-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-right: -60px;
+            @include media-breakpoint-down(lg){
+                flex-direction: column;
+                margin-right: 0;
+            }
+            .title{
+                font-size: 20px;
+                line-height: 30px;
+                font-weight: 400;
+                color: #fff;
+                margin-bottom: 0;
+                @include media-breakpoint-down(lg) {
+                    margin: 20px 0;
+                    br{display: none;}
+                }
+            }
+        }
+        .image-box{
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-right: 40px;
+            margin-bottom: 0;
+            @include media-breakpoint-down(lg) {
+                margin-right: 0;
+            }
+            img{
+                border-radius: 50%;
+                display: inline-block;
+                border: 3px solid #fff;
+                height: 48px;
+                width: 48px;
+                margin-right: -10px;
+            }
+        }
+    }
+    .btn-column{
+        .btn-box{
+            img{
+                position: relative;
+                @include media-breakpoint-down(xl){
+                    display: none;
+                }
+            }
+        }
+        .theme-btn{
+            font-size: 18px;
+            margin-left: 10px;
+        }
+    }
+}
+
+/*** 
+
+====================================================================
+		Call To Action Two
+====================================================================
+
+***/
+
+.call-to-action-two{
+    position: relative;
+    z-index: 2;
+    .bg-image{
+        &:before{
+            @include overlay;
+            background-color: rgba(33,33,33,.60);
+            content: "";
+        }
+    }
+    .upper-box{
+        position: relative;
+        padding: 120px 0 0;
+        .title-column{
+            margin-bottom: 130px;
+            .inner-column{
+                position: relative;
+                padding: 45px 45px;
+                padding-right: 0;
+                @include media-breakpoint-down(lg){
+                    text-align: center;
+                    padding: 0 20px;
+                    &::before{display: none};
+                }
+                &::before{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 200px;
+                    border: 10px solid var(--theme-color2);
+                    border-right: 0;
+                    content: "";
+                }
+            }
+        }
+        .info-column{
+            .inner-column{
+                position: relative;
+                display: flex;
+                justify-content: flex-end;
+                @include media-breakpoint-down(lg){
+                    margin: 0 -15px;
+                }
+            }
+            .info-box{
+                position: relative;
+                margin-top: 150px;
+                background-color: var(--bg-theme-color1);
+                max-width: 470px;
+                padding: 75px 65px 80px;
+                text-align: left;
+                width: 100%;
+                overflow: hidden;
+                @include media-breakpoint-down(xl){
+                    margin-top: 50px;
+                }
+                @include media-breakpoint-down(lg){
+                    max-width: 100%;
+                    padding: 40px 20px;
+                    margin-top: 0;
+                }
+                .inner{
+                    position: relative;
+                    padding-left: 100px;
+                    @include media-breakpoint-down(lg){
+                        padding-left: 0;
+                        text-align: center;
+                    }
+                }
+                .icon{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    font-size: 76px;
+                    color: var(--theme-color2);
+                    @include media-breakpoint-down(lg){
+                        position: relative;
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                }
+                .fade-icon{
+                    position: absolute;
+                    right: -100px;
+                    bottom: -120px;
+                    transform: rotate(-30deg);
+                    line-height: 1em;
+                    font-size: 160px;
+                    color: var(--theme-color2);
+                    opacity: .10;
+                }
+                .text{
+                    font-size: 18px;
+                    color: #fff;
+                    margin-bottom: 15px;
+                }
+                .title{
+                    font-size: 30px;
+                    color: var(--theme-color-light);
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .lower-content{
+        position: relative;
+        @include media-breakpoint-down(lg){
+            margin: 0 -15px;
+        }
+        .bg{
+            background-size: auto;
+            background-position: right top;
+        }
+    }
+
+    .features-column{
+        .inner-column{
+            position: relative;
+            margin-right: -28px;
+            @include media-breakpoint-down(lg){
+                margin-right: 0;
+            }
+        }
+    }
+
+    .video-box{
+        position: relative;
+        .image{
+            margin-bottom: 0;
+            img{
+                width: 100%
+            }
+        }
+        .play-now{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            .icon{
+                color: var(--theme-color1);
+            }
+        }
+    }
+}
+
+
+.feature-block-four{
+    position: relative;
+    .inner-box{
+        position: relative;
+        display: flex;
+        background-color: var(--theme-color-dark);
+        @include media-breakpoint-down(sm){
+            flex-direction: column;
+        }
+        &:hover{
+            .content-box{
+                .icon{
+                    transform: scale(-1) rotate(180deg);
+                }
+            }
+        }
+    }
+    .image-box{
+        position: relative;
+        flex: 0 0 50%;
+        width: 50%;
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            order: 0 !important;
+        }
+        .image{
+            margin-bottom: 0;
+            img{
+                height: 100%;
+                width: 100%;
+                min-height: 270px;
+                object-fit: cover;
+            }
+        }
+    }
+    .content-box{
+        position: relative;
+        padding: 35px 45px;
+        background-color: #212121;
+        @include media-breakpoint-down(sm){
+            order: 2 !important;
+            padding: 50px 20px;
+        }
+        .fade-icon {
+            position: absolute;
+            right: -20px;
+            bottom: -40px;
+            transform: rotate(-30deg);
+            line-height: 1em;
+            font-size: 120px;
+            color: var(--theme-color1);
+            opacity: .10;
+        }
+        .icon{
+            position: relative;
+            display: inline-block;
+            font-size: 54px;
+            line-height: 1em;
+            color: var(--theme-color1);
+            margin-bottom: 20px;
+            transition: all 300ms ease;
+        }
+        .title{
+            color: #fff;
+            margin-bottom: 15px;
+        }
+        .text{
+            font-size: 14px;
+            color: #ffffff;
+        }
+    }
+    &.style-two{
+        .image-box{
+            order: 2;
+        }
+        .content-box{
+            background-color: var(--bg-theme-color2);
+            .text,
+            .title{
+                color: var(--theme-color-dark);
+            }
+        }
+    }
+}
+

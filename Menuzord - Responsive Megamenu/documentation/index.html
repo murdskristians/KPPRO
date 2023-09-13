@@ -1,0 +1,995 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Menuzord - Responsive Megamenu</title>
+	
+	<meta name="description" content="">
+	<meta name="author" content="marcoarib">
+	<meta name="copyright" content="marcoarib">
+	<meta name="generator" content="Documenter v2.0 http://rxa.li/documenter">
+	<meta name="date" content="2014-08-05T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="assets/css/documenter_style.css" media="all">
+	<link rel="stylesheet" href="assets/js/google-code-prettify/prettify.css" media="screen">
+	<script src="assets/js/google-code-prettify/prettify.js"></script>
+
+	
+	
+	<script src="assets/js/jquery.js"></script>
+	
+	<script src="assets/js/jquery.scrollTo.js"></script>
+	<script src="assets/js/jquery.easing.js"></script>
+	
+	<script>document.createElement('section');var duration='500',easing='swing';</script>
+	<script src="assets/js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#FF9100;}
+		::selection{background:#444444;color:#FF9100;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		.btn {
+			border-radius:3px;
+		}
+		.btn-primary {
+			  background-image: -moz-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -ms-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -webkit-gradient(linear, 0 0, 0 0088CC%, from(#DDDDDD), to(#0044CC));
+			  background-image: -webkit-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: -o-linear-gradient(top, #0088CC, #0044CC);
+			  background-image: linear-gradient(top, #0088CC, #0044CC);
+			  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0088CC', endColorstr='#0044CC', GradientType=0);
+			  border-color: #0044CC #0044CC #bfbfbf;
+			  color:#FFFFFF;
+		}
+		.btn-primary:hover,
+		.btn-primary:active,
+		.btn-primary.active,
+		.btn-primary.disabled,
+		.btn-primary[disabled] {
+		  border-color: #0088CC #0088CC #bfbfbf;
+		  background-color: #0044CC;
+		}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ul a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ul a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ul{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ul a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ul a:hover{background:#444444;color:#FF9100;border-top:1px solid #444444;}
+		#documenter_sidebar ul a.current{background:#444444;color:#FF9100;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+		
+		.docTable th{
+			background: #555;
+			color: #dedede;
+		}
+		.docTable th,
+		.docTable td{
+			border: solid 1px #dedede;
+			padding: 6px !important;
+		}
+	</style>
+	
+</head>
+<body class="documenter-project-menuzord">
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ul id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+				
+			<li><a href="#intro" title="1. Intro">1. Intro</a></li>
+			<li><a href="#installation_and_markup" title="2. Installation and markup">2. Installation and markup</a></li>
+			<li><a href="#brand_text" title="3. Brand text">3. Brand text</a></li>
+			<li><a href="#dropdown" title="4. Dropdown">4. Dropdown</a></li>
+			<li><a href="#megamenu" title="5. Megamenu">5. Megamenu</a></li>
+			<li><a href="#megamenu_grid_system" title="6. Megamenu Grid System">6. Megamenu Grid System</a></li>
+			<li><a href="#icons" title="7. Icons">7. Icons</a></li>
+			<li><a href="#search_field" title="8. Search field">8. Search field</a></li>
+			<li><a href="#skins" title="9. Skins">9. Skins</a></li>
+			<li><a href="#0_color_schemes" title="10. Color Schemes">10. Color Schemes</a></li>
+			<li><a href="#1_javascript_options" title="11. Javascript options">11. Javascript options</a></li>
+			<li><a href="#2_vertical_tabs" title="12. Vertical Tabs">12. Vertical Tabs</a></li>
+			<li><a href="#3_fixed_menu_sticky_menu" title="13. Fixed menu (sticky menu)">13. Fixed menu (sticky menu)</a></li>
+			<li><a href="#4_important_info" title="14. Important info">14. Important info</a></li>
+			<li><a href="#5_support" title="15. Support">15. Support</a></li>
+
+		</ul>
+		<div id="documenter_copyright">Copyright marcoarib 2014<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v2.0</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover">
+	<h1>Menuzord</h1>
+	<h2>Responsive Megamenu</h2>
+	<div id="documenter_buttons">
+		
+	</div>
+	<hr>
+	<ul>
+	<li>Created: 08 August 2014</li>
+	<li>Latest update: 08 August 2014</li>
+	<li>By: marcoarib</li>
+	<li><a href="http://www.webpulse.com.br/menuzord/index.html">www.webpulse.com.br/menuzord/index.html</a></li>
+	
+	</ul>
+	<p>Thank you for purchase this product. If you need help to use the script, feel free to contact me by my profile page on Codecanyon</p>
+	</section>
+	
+	<section id="intro">
+	<div class="page-header"><h3>1. Intro</h3><hr class="notop"></div>
+<p>
+	Thank you for purchase this product. Menuzord is a responsive megamenu pack to help you to define a modern navigation for your website. Feel free to contact if you have any problems with bugs and installation.</p>
+</section>
+<section id="installation_and_markup">
+	<div class="page-header"><h3>2. Installation and markup</h3><hr class="notop"></div>
+<p>
+	First of all, we have to put the basic files inside the project folders.</p>
+<h5>
+	<strong>CSS reference</strong></h5>
+<pre class="prettyprint lang-html linenums">
+<span class="c0">&lt;link rel=</span><span class="c2">&quot;stylesheet&quot;</span><span class="c0"> type=</span><span class="c2">&quot;text/css&quot;</span><span class="c0"> href=</span><span class="c2">&quot;css/menuzord.css&quot;</span><span class="c0">&gt;</span></pre>
+<p>
+	You need to put the CSS reference inside the HEAD section of the page.</p>
+<h5>
+	<strong>Javascript reference</strong></h5>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/jquery-1.11.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;js/menuzord.js&quot;&gt;&lt;/script&gt;</pre>
+<p>
+	You can put the Javascript reference in the HEAD section or for better performance at the bottom of the page, before the body closing tag (&lt;/body&gt;).</p>
+<p>
+	<strong>Important:</strong> The file references above assume that you have a folder named CSS for the styles and a folder named JS for the scripts.</p>
+<h5>
+	<strong>Basic HTML markup</strong></h5>
+<p>
+	The basic markup of the Menuzord is compound:</p>
+<p>
+	a) A wrapper &quot;menuzord&quot; to involve the menu components. The wrapper has &quot;width: 100%&quot; by default</p>
+<p>
+	b) An unordered list with a class &quot;menuzord-menu&quot;</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	So, call the menu:</p>
+<pre class="prettyprint lang-js linenums">
+&lt;script type=&quot;text/javascript&quot;&gt;
+   jQuery(document).ready(function(){  
+      jQuery(&quot;#menuzord&quot;).menuzord();
+   });
+&lt;/script&gt;</pre>
+<h5>
+	<strong>Responsive Meta Tag</strong></h5>
+<p>
+	<span id="result_box" lang="en"><span class="hps">If you</span> <span class="hps">want to use</span> <span class="hps">Menuzord</span> <span class="hps">in a</span> <span class="hps">responsive</span> <span class="hps">website</span><span>, you</span> <span class="hps">need to use a</span> <span class="hps atn">&quot;</span><span>meta tag</span><span>&quot; to</span> <span class="hps">make the</span> <span class="hps">website</span> <span class="hps">is displayed</span> <span class="hps">properly</span> <span class="hps">on smaller screens</span><span>.</span> <span class="hps">If</span> <span class="hps">you are not using</span> <span class="hps">a meta tag</span> <span class="hps">for</span> <span class="hps">this, use</span> <span class="hps">one like</span> <span class="hps">this</span><span>:</span></span></p>
+<pre class="prettyprint lang-html linenums">
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, maximum-scale=1&quot;&gt;</pre>
+</section>
+<section id="brand_text">
+	<div class="page-header"><h3>3. Brand text</h3><hr class="notop"></div>
+<p>
+	Optionally you can use a text for your brand. The text is placed on the left side of menu. See the code (line 2):</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;a href=&quot;#&quot; class=&quot;menuzord-brand&quot;&gt;Brand&lt;/a&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="dropdown">
+	<div class="page-header"><h3>4. Dropdown</h3><hr class="notop"></div>
+<p>
+	Menuzord provides unlimited dropdown levels. Just use other unordered list inside a menu item:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;a href=&quot;#&quot; class=&quot;menuzord-brand&quot;&gt;Brand&lt;/a&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
+         &lt;ul class=&quot;dropdown&quot;&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+         &lt;/ul&gt;      
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<h5>
+	<strong>Dropdown &quot;right to left&quot;</strong></h5>
+<p>
+	The dropdowns are aligned &quot;left to right&quot; by default. You can use it &quot;right to left&quot; just adding the class &quot;dropdown-left&quot; on the dropdown:</p>
+<pre class="prettyprint lang-html linenums">
+...
+&lt;ul class=&quot;dropdown dropdown-left&quot;&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+   &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+...
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+</section>
+<section id="megamenu">
+	<div class="page-header"><h3>5. Megamenu</h3><hr class="notop"></div>
+<p>
+	Menuzord provides flexible megamenus. Just use a &quot;div&quot; megamenu inside the menu item. See the markup:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;a href=&quot;#&quot; class=&quot;menuzord-brand&quot;&gt;Brand&lt;/a&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
+         &lt;div class=&quot;megamenu&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;    &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	<strong>Note:</strong> You can use dropdowns and megamenus in the same menu</p>
+<h5>
+	<strong>Megamenu widths</strong></h5>
+<p>
+	There are three preset menu widths to use (you can define others):</p>
+<p>
+	100% of the navigation width (default):</p>
+<pre class="prettyprint lang-html linenums">
+... 
+&lt;div class=&quot;megamenu&quot;&gt;
+
+&lt;/div&gt;
+...
+</pre>
+<p>
+	50% of the navigation width:</p>
+<pre class="prettyprint lang-html linenums">
+...
+&lt;div class=&quot;megamenu megamenu-half-width&quot;&gt;
+
+&lt;/div&gt;
+...
+</pre>
+<p>
+	25% of the navigation width:</p>
+<pre class="prettyprint lang-html linenums">
+...
+&lt;div class=&quot;megamenu megamenu-quarter-width&quot;&gt;
+
+&lt;/div&gt;
+...
+</pre>
+</section>
+<section id="megamenu_grid_system">
+	<div class="page-header"><h3>6. Megamenu Grid System</h3><hr class="notop"></div>
+<p>
+	Menuzord provides a complete grid system to help you organize the elements inside your menu. You can use a max of 12 columns. See the examples:</p>
+<p>
+	a) The megamenu below is divided in 3 columns, both with 33,3% of the megamenu inner width:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;a href=&quot;#&quot; class=&quot;menuzord-brand&quot;&gt;Brand&lt;/a&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
+         &lt;div class=&quot;megamenu&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;megamenu-row&quot;&gt;
+               &lt;div class=&quot;col4&quot;&gt;&lt;/div&gt;
+               &lt;div class=&quot;col4&quot;&gt;&lt;/div&gt;
+               &lt;div class=&quot;col4&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;    &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	b) The megamenu below is divided in 4 columns. Each column has 25% of the megamenu inner width:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+   &lt;a href=&quot;#&quot; class=&quot;menuzord-brand&quot;&gt;Brand&lt;/a&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;
+         &lt;div class=&quot;megamenu&quot;&gt;
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&lt;div class=&quot;megamenu-row&quot;&gt;
+               &lt;div class=&quot;col3&quot;&gt;&lt;/div&gt;
+               &lt;div class=&quot;col3&quot;&gt;&lt;/div&gt;
+               &lt;div class=&quot;col3&quot;&gt;&lt;/div&gt;
+               &lt;div class=&quot;col3&quot;&gt;&lt;/div&gt;
+            &lt;/div&gt; &nbsp;&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;&nbsp;    &lt;/div&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+</section>
+<section id="icons">
+	<div class="page-header"><h3>7. Icons</h3><hr class="notop"></div>
+<p>
+	You can use icons (<a href="http://fortawesome.github.io/Font-Awesome/">Font-awesome</a>) on menu items. Choose an <a href="http://fortawesome.github.io/Font-Awesome/icons/">icon</a> and use it inside the menu item:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;li&gt;
+   &lt;a href=&quot;#&quot;&gt;<strong>&lt;i class=&quot;fa fa-home&quot;&gt;&lt;/i&gt;</strong>Item 1&lt;/a&gt;
+&lt;/li&gt;</pre>
+<p>
+	Remember, you need &quot;font-awesome.css&quot; (included in the package):</p>
+<pre class="prettyprint lang-html linenums">
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;css/font-awesome.css&quot;&gt;</pre>
+</section>
+<section id="search_field">
+	<div class="page-header"><h3>8. Search field</h3><hr class="notop"></div>
+<p>
+	To insert a search field on Menuzord, use a special menu item with the following markup:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;li class=&quot;search&quot;&gt;
+   &lt;form action=&quot;&quot; method=&quot;get&quot;&gt;
+      &lt;input type=&quot;text&quot; name=&quot;search&quot; placeholder=&quot;Search&quot;&gt;
+   &lt;/form&gt;
+&lt;/li&gt;</pre>
+</section>
+<section id="skins">
+	<div class="page-header"><h3>9. Skins</h3><hr class="notop"></div>
+<p>
+	Menuzord offers 16 skins. Each skin has 8 preset colors (go to the next section to see how to change the color scheme). The table below shows the CSS reference for each skin:</p>
+<table class="docTable" border="1" cellpadding="1" cellspacing="1" style="width: 600px; border: 1px solid rgb(222, 222, 222);">
+	<thead>
+		<tr>
+			<th scope="col" style="text-align: center; border-color: rgb(222, 222, 222);">
+				Skin name</th>
+			<th scope="col" style="text-align: center; border-color: rgb(222, 222, 222);">
+				Aditional CSS file</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				none (default)</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				none</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Border-bottom</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-border-bottom.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Border Boxed</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-border-boxed.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Border-left</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-border-left.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Border-top</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-border-top.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Border-top-bottom</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-border-top-bottom.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Bottom trace</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-bottom-trace.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Boxed</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-boxed.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Colored</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-colored.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Dark</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-dark.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Gradient</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-gradient.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Rounded Boxed</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-rounded-boxed.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Shadow</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-shadow.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Strip</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-strip.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Subcolored</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-subcolored.css</td>
+		</tr>
+		<tr>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				Top-bottom boxed border</td>
+			<td style="text-align: center; border-color: rgb(222, 222, 222);">
+				menuzord-top-bottom-boxed-border.css</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	After choose the skin, place the CSS reference <strong>AFTER</strong> the <strong>menuzord.css</strong>.</p>
+<p>
+	See an example with <strong>Dark Skin</strong>:</p>
+<pre class="prettyprint lang-html linenums">
+<span class="c0">&lt;link rel=</span><span class="c2">&quot;stylesheet&quot;</span><span class="c0"> type=</span><span class="c2">&quot;text/css&quot;</span><span class="c0"> href=</span><span class="c2">&quot;css/menuzord.css&quot;</span><span class="c0">&gt;</span>
+<span class="c0">&lt;link rel=</span><span class="c2">&quot;stylesheet&quot;</span><span class="c0"> type=</span><span class="c2">&quot;text/css&quot;</span><span class="c0"> href=</span><span class="c2">&quot;css/menuzord-dark.css&quot;</span><span class="c0">&gt;</span></pre>
+<p>
+	See the demos for all skins in the package.</p>
+</section>
+<section id="0_color_schemes">
+	<div class="page-header"><h3>10. Color Schemes</h3><hr class="notop"></div>
+<p>
+	Menuzord provides 8 color schemes per each skin. The table below shows the color schemes and correspondent CSS classes:</p>
+<table class="docTable" align="left" border="1" cellpadding="1" cellspacing="1" style="width: 600px; border: 1px solid rgb(222, 222, 222);">
+	<thead>
+		<tr>
+			<th scope="col" style="text-align: center;">
+				Color scheme</th>
+			<th scope="col" style="text-align: center;">
+				CSS class</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+				default</td>
+			<td style="text-align: center;">
+				none</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				blue</td>
+			<td style="text-align: center;">
+				.blue</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				green</td>
+			<td style="text-align: center;">
+				.green</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				red</td>
+			<td style="text-align: center;">
+				.red</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				orange</td>
+			<td style="text-align: center;">
+				.orange</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				yellow</td>
+			<td style="text-align: center;">
+				.yellow</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				purple</td>
+			<td style="text-align: center;">
+				.purple</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				pink</td>
+			<td style="text-align: center;">
+				.pink</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	&nbsp;</p>
+<br>
+<p>
+	To use a color scheme, just use the proper CSS class. Examples:</p>
+<p>
+	a) Red Menuzord</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord red&quot;&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+<p>
+	b) Orange Menuzord</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div id=&quot;menuzord&quot; class=&quot;menuzord orange&quot;&gt;
+   &lt;ul class=&quot;menuzord-menu&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+&lt;/div&gt;</pre>
+</section>
+<section id="1_javascript_options">
+	<div class="page-header"><h3>11. Javascript options</h3><hr class="notop"></div>
+<p>
+	Using Menuzord you can play with many javascript options to increase the power of your website navigation.</p>
+<p>
+	See the available options:</p>
+<table class="docTable" border="1" cellpadding="1" cellspacing="1" style="border: 1px solid rgb(222, 222, 222); width: 960px;">
+	<thead>
+		<tr>
+			<th scope="col" style="text-align: center;">
+				Option name</th>
+			<th scope="col" style="text-align: center;">
+				type</th>
+			<th scope="col" style="text-align: center;">
+				Default value</th>
+			<th scope="col" style="text-align: center;">
+				Options</th>
+			<th scope="col" style="text-align: center;">
+				Description</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td style="text-align: center;">
+				showSpeed</td>
+			<td style="text-align: center;">
+				integer</td>
+			<td style="text-align: center;">
+				300(ms)</td>
+			<td style="text-align: center;">
+				&gt; 0</td>
+			<td style="text-align: center;">
+				<span class="short_text" id="result_box" lang="en"><span class="hps">Sets the speed</span> <span class="hps">that the</span> <span class="hps">submenu</span> <span class="hps">appears</span></span>. <span class="short_text" id="result_box" lang="en"><span class="hps">Must be greater than</span> <span class="hps">0</span></span>.</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				hideSpeed</td>
+			<td style="text-align: center;">
+				integer</td>
+			<td style="text-align: center;">
+				300(ms)</td>
+			<td style="text-align: center;">
+				&gt; 0</td>
+			<td style="text-align: center;">
+				<div class="almost_half_cell" id="gt-res-content">
+					<div dir="ltr" style="zoom:1">
+						<span class="short_text" id="result_box" lang="en"><span class="hps">Sets the speed</span> <span class="hps">that the</span> <span class="hps">submenu</span> <span class="hps">disappears</span></span>. <span class="short_text" id="result_box" lang="en"><span class="hps">Must be greater than</span> <span class="hps">0.</span></span></div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				trigger</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;hover&quot;</td>
+			<td style="text-align: center;">
+				<i>hover</i> or <i>click</i>
+			</td>
+			<td style="text-align: center;">
+				Defines the event type for submenu appear</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				showDelay</td>
+			<td style="text-align: center;">
+				integer</td>
+			<td style="text-align: center;">
+				0</td>
+			<td style="text-align: center;">
+				&gt; 0</td>
+			<td style="text-align: center;">
+				<span class="short_text" id="result_box" lang="en"><span class="hps">Sets the delay speed</span> <span class="hps">that the</span> <span class="hps">submenu</span> <span class="hps">appears. </span></span><span class="short_text" id="result_box" lang="en"><span class="hps">Must be greater than</span> <span class="hps">0</span></span>.</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				hideDelay</td>
+			<td style="text-align: center;">
+				integer</td>
+			<td style="text-align: center;">
+				0</td>
+			<td style="text-align: center;">
+				&gt; 0</td>
+			<td style="text-align: center;">
+				<div class="almost_half_cell" id="gt-res-content">
+					<div dir="ltr" style="zoom:1">
+						<span class="short_text" id="result_box" lang="en"><span class="hps">Sets the delay speed</span> <span class="hps">that the</span> <span class="hps">submenu</span> <span class="hps">disappears</span></span>.<span class="short_text" id="result_box" lang="en"><span class="hps"> Must be greater than</span> <span class="hps">0</span></span>.</div>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				effect</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;fade&quot;</td>
+			<td style="text-align: center;">
+				<i>fade</i> or <i>slide</i>
+			</td>
+			<td style="text-align: center;">
+				Defines the primary effect for submenus</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				align</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;left&quot;</td>
+			<td style="text-align: center;">
+				<i>left</i> or <i>right</i>
+			</td>
+			<td style="text-align: center;">
+				Defines the alignment for the menu items</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				responsive</td>
+			<td style="text-align: center;">
+				boolean</td>
+			<td style="text-align: center;">
+				true</td>
+			<td style="text-align: center;">
+				True or false</td>
+			<td style="text-align: center;">
+				Defines if menuzord is responsive or not</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				animation</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;none&quot;</td>
+			<td style="text-align: center;">
+				<i>zoom-in, zoom-out, drop-up, drop-left, swing, flip, roll-in </i>and<i> stretch</i>
+			</td>
+			<td style="text-align: center;">
+				Defines the animation (secondary effects) for submenus. You must use the adtional CSS file <strong><em>menuzord-animations.css</em></strong></td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				indentChildren</td>
+			<td style="text-align: center;">
+				boolean</td>
+			<td style="text-align: center;">
+				true</td>
+			<td style="text-align: center;">
+				True or false</td>
+			<td style="text-align: center;">
+				Defines if dropdowns on mobile view are indented</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				indicatorFirstLevel</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;+&quot;</td>
+			<td style="text-align: center;">
+				<span class="short_text" id="result_box" lang="en"><span class="hps">Free use</span></span></td>
+			<td style="text-align: center;">
+				Defines the icon to indicate the submenus on first level (UTF-8 icons, Font-awesome icons, etc.)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				indicatorSecondLevel</td>
+			<td style="text-align: center;">
+				string</td>
+			<td style="text-align: center;">
+				&quot;+&quot;</td>
+			<td style="text-align: center;">
+				<span class="short_text" id="result_box" lang="en"><span class="hps">Free use</span></span></td>
+			<td style="text-align: center;">
+				Defines the icon to indicate the submenus <span class="short_text" id="result_box" lang="en"><span class="hps">at lower levels</span></span> (UTF-8 icons, Font-awesome icons, etc.)</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				scrollable</td>
+			<td style="text-align: center;">
+				boolean</td>
+			<td style="text-align: center;">
+				false</td>
+			<td style="text-align: center;">
+				True or false</td>
+			<td style="text-align: center;">
+				Defines if menu is scrollable on mobile mode</td>
+		</tr>
+		<tr>
+			<td style="text-align: center;">
+				scrollableMaxHeight</td>
+			<td style="text-align: center;">
+				integer</td>
+			<td style="text-align: center;">
+				400</td>
+			<td style="text-align: center;">
+				&gt; 0</td>
+			<td style="text-align: center;">
+				Max height (px) of the scrollable menu</td>
+		</tr>
+	</tbody>
+</table>
+<p>
+	Examples:</p>
+<p>
+	a) Menuzord using &quot;slide&quot; effect with delay</p>
+<pre class="prettyprint lang-js linenums">
+jQuery(document).ready(function(){  
+   jQuery(&quot;#menuzord&quot;).menuzord({
+      showDelay: 200,
+      effect: &quot;slide&quot;
+   });
+});</pre>
+<p>
+	b) Menuzord not responsive and aligned to right</p>
+<pre class="prettyprint lang-js linenums">
+jQuery(document).ready(function(){  
+   jQuery(&quot;#menuzord&quot;).menuzord({
+      align: &quot;right&quot;,
+      responsive: false
+   });
+});</pre>
+</section>
+<section id="2_vertical_tabs">
+	<div class="page-header"><h3>12. Vertical Tabs</h3><hr class="notop"></div>
+<p>
+	Menuzord provides vertical tabs. Use it inside a megamenu div to place your content in different areas</p>
+<p>
+	Markup example:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;menuzord-tabs&quot;&gt;
+
+   &lt;ul class=&quot;menuzord-tabs-nav&quot;&gt;
+      &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Tab 1&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tab 2&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Tab 3&lt;/a&gt;&lt;/li&gt;
+   &lt;/ul&gt;
+
+   &lt;div class=&quot;menuzord-tabs-content active&quot;&gt;
+      &lt;!-- tab 1 content --&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;menuzord-tabs-content&quot;&gt;
+      &lt;!-- tab 2 content --&gt;
+   &lt;/div&gt;
+   &lt;div class=&quot;menuzord-tabs-content&quot;&gt;
+      &lt;!-- tab 3 content --&gt;
+   &lt;/div&gt;
+
+&lt;/div&gt;</pre>
+<p>
+	The class &quot;<strong>active</strong>&quot; defines the current item.</p>
+</section>
+<section id="3_fixed_menu_sticky_menu">
+	<div class="page-header"><h3>13. Fixed menu (sticky menu)</h3><hr class="notop"></div>
+<p>
+	Many people prefers use the menu fixed on your pages. This chapter show you how to do that:</p>
+<p>
+	<strong>1 - Full width</strong></p>
+<p>
+	<img alt="" src="assets/images/image_2.png" style="width: 161px; height: 197px;"></p>
+<p>
+	Wrap the menu with a div:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;fixed&quot;&gt;
+   &lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+      &lt;ul class=&quot;menuzord-menu&quot;&gt;
+         &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	The CSS:</p>
+<pre class="prettyprint lang-css linenums">
+.fixed{
+   position: fixed;
+   width: 100%;
+}
+</pre>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>2 - <span class="short_text" id="result_box" lang="en"><span class="hps">Centralized</span> on <span class="hps">top</span></span></strong></p>
+<p>
+	<img alt="" src="assets/images/image_1.png"  ></p>
+<p>
+	Here we have the <span class="short_text" id="result_box" lang="en"><span class="hps">previous strategy with little changes. </span></span></p>
+<p>
+	Wrap the menu with a div:</p>
+<pre class="prettyprint lang-html linenums">
+&lt;div class=&quot;fixed&quot;&gt;
+   &lt;div id=&quot;menuzord&quot; class=&quot;menuzord&quot;&gt;
+      &lt;ul class=&quot;menuzord-menu&quot;&gt;
+         &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Item 1&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 2&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 3&lt;/a&gt;&lt;/li&gt;
+         &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Item 4&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+<p>
+	The CSS:</p>
+<pre class="prettyprint lang-css linenums">
+.fixed{
+   position: fixed;
+   width: 90%;
+   margin: 20px 0 0 -45%;
+   left: 50%;
+}
+</pre>
+<p>
+	Notes:</p>
+<p>
+	a. The margin-left is the half of the width and always negative.</p>
+<p>
+	b. If you have a menu with many items, is a good idea to use &quot;scrollable: true&quot;</p>
+</section>
+<section id="4_important_info">
+	<div class="page-header"><h3>14. Important info</h3><hr class="notop"></div>
+<p>
+	See here some important things before to implement Menuzord on your website:</p>
+<ul>
+	<li>
+		<strong>Browser compatibility</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	- IE8+, Chrome, Firefox, Safari, Opera</p>
+<p style="margin-left: 40px;">
+	- Safari on Ipad/Iphone</p>
+<p style="margin-left: 40px;">
+	- Chrome/Firefox on Android</p>
+<ul>
+	<li>
+		<strong>jQuery compatibility</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	Tested on version 1.8+ (included 2.0)</p>
+<ul>
+	<li>
+		<strong>Bootstrap compatibility</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	Menuzord is compatible with <a href="http://getbootstrap.com/">Bootstrap</a> framework</p>
+<ul>
+	<li>
+		<strong>Real links on parent items</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	If you need using real links on a parent item and this item has a submenu, the dinamic interaction is:</p>
+<p style="margin-left: 40px;">
+	<em>Landscape mode + Touch Device</em>: first tap = submenu appears | second tap = go to real link</p>
+<p style="margin-left: 40px;">
+	<em>Portrait mode + Touch Device</em>: tap on menu item to follow the link | click on &quot;submenu icon&quot; to opening submenu</p>
+<ul>
+	<li>
+		<strong>Responsive behavior (<em>responsive: true</em>)</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	Menuzord <span>reacts (and go to Portrait mode) if the screen width is minor than 768px (the most popular screen width on mobile devices). </span></p>
+<ul>
+	<li>
+		<strong>Variable &quot;mobileWidthBase&quot;</strong></li>
+</ul>
+<p style="margin-left: 40px;">
+	In file &quot;<em>menuzord,js</em>&quot; there is a variable named &quot;<em>mobileWidthBase</em>&quot;. The default value of this variable is 768. When Menuzord is viewed on a device with a screen width minor than <strong>769px</strong>, Menuzord go to Mobile mode (if you are using it on a responsive mode). You can modify this variable if you want. If you do this, remember of modify the &quot;@media querie&quot; in the CSS file too.</p>
+<p style="margin-left: 40px;">
+	Example:</p>
+<p style="margin-left: 40px;">
+	<em>menuzord.js (line 30)</em></p>
+<pre class="prettyprint lang-js linenums" style="margin-left: 40px;">
+var mobileWidthBase = 900;</pre>
+<p style="margin-left: 40px;">
+	menuzord.css</p>
+<pre class="prettyprint lang-html linenums" style="margin-left: 40px;">
+@media (max-width: 900px){
+   ...
+}</pre>
+</section>
+<section id="5_support">
+	<div class="page-header"><h3>15. Support</h3><hr class="notop"></div>
+<p>
+	If you have experienced bugs or problems to implement the Menuzord in your website, you can contact me by my profile page:<br>
+	<br>
+	<a href="http://codecanyon.net/user/marcoarib">http://codecanyon.net/user/marcoarib</a></p>
+<p>
+	<strong>NOTES:</strong></p>
+<ol>
+	<li>
+		<strong>The support includes help with bugs or installation</strong></li>
+	<li>
+		<strong>The support not include help for customisations</strong></li>
+	<li>
+		<strong>If you have a problem, a live preview to reproduce the issue is VERY IMPORTANT</strong></li>
+</ol>
+<p>
+	&nbsp;</p>
+<p>
+	Thank you.</p>
+<p>
+	marcoarib</p>
+</section>
+
+	</div>
+</body>
+</html>

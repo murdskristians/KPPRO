@@ -1,0 +1,230 @@
+/*** 
+
+====================================================================
+		FAQ's Sectiom
+====================================================================
+
+***/
+
+.faqs-section {
+	position: relative;
+	padding: 120px 0 70px;
+    &.pull-down{
+        padding-bottom: 270px;
+        margin-bottom: -170px;
+    }
+    .bg-image{
+        &:before{
+            @include overlay;
+            content: "";
+            background-color: #16161a;
+            opacity: .9;
+        }
+        &:after{
+            @extend :before;
+            background-color: transparent;
+            background-image: url(../images/icons/overlay.png);
+            opacity: .30;
+        }
+    }
+	.sec-title {
+		margin-bottom: 30px;
+	}
+    .info-box{
+        position: relative;
+        border-top: 1px solid rgba(255,255,255,.10);
+        margin-top: 50px;
+        padding-top: 40px;
+        padding-left: 70px;
+		@include media-breakpoint-down(sm){
+			padding-left: 0;
+			text-align: center;
+			br{display: none;}
+		}
+        .icon{
+            position: absolute;
+            left: 0;
+            top: 30px;
+            font-size: 54px;
+            color: var(--theme-color1);
+			@include media-breakpoint-down(sm){
+				position: relative;
+				top: 0;
+				display: inline-block;
+				margin-bottom: 10px;
+			}
+        }
+        .text{
+            font-size: 14px;
+            line-height: 24px;
+            color: #fff;
+        }
+    }
+
+    .faq-column{
+        .inner-column{
+            padding-left: 100px;
+            padding-top: 10px;
+			@include media-breakpoint-down(xl){
+				padding-left: 0;
+				padding-top: 40px;
+			}
+        }
+    }
+}
+
+
+.accordion-box {
+	position: relative;
+	.block {
+		position: relative;
+        margin-bottom: 20px;
+        background-color: #fff;
+		.acc-btn {
+			position: relative;
+			font-size: 18px;
+			line-height: 26px;
+			color: #000;
+			font-weight: 600;
+			cursor: pointer;
+            @include title-font;
+			padding: 15px 30px;
+			padding-right: 70px;
+			transition: all 500ms ease;
+			.icon {
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				height: 56px;
+                width: 56px;
+				font-size: 14px;
+				line-height: 56px;
+				color: var(--theme-color-dark);
+                background-color: #ebebeb;
+				text-align: center;
+				transition: all 500ms ease;
+			}
+		}
+		.acc-btn.active {
+			color: var(--theme-color1);
+			.icon {
+                font-size: 14px;
+                color: #fff;
+				background-color: var(--bg-theme-color1);
+				&:before {
+					content: "\f106";
+				}
+			}
+		}
+		.acc-content {
+			position: relative;
+			display: none;
+			.content {
+				position: relative;
+				padding: 0px 30px 25px;
+				.text {
+					display: block;
+					font-size: 14px;
+					line-height: 28px;
+					color: #7a7a7a;
+					margin-bottom: 0;
+				}
+			}
+		}
+		.acc-content.current {
+			display: block;
+		}
+	}
+	&.style-two{
+		.block{
+			border: 1px solid #efefef;
+		}
+	}
+}
+
+.faq-block {
+	position: relative;
+	margin-bottom: 40px;
+	.inner-box {
+		padding-left: 70px;
+		position: relative;
+		&:hover {
+			.icon {
+				background-color: var(--bg-theme-color1);
+			}
+		}
+	}
+	.icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		height: 50px;
+		width: 50px;
+		color: #fff;
+		background-color: var(--bg-theme-color2);
+		border-radius: 50%;
+		font-size: 14px;
+		-webkit-transition: all 300ms ease;
+		transition: all 300ms ease;
+	}
+	h4 {
+		font-size: 18px;
+		line-height: 1.2em;
+		color: var(--theme-color1);
+		font-weight: 700;
+		margin-bottom: 10px;
+	}
+	.text {
+		font-size: 16px;
+		line-height: 30px;
+		color: var(--theme-color4);
+	}
+}
+
+/*** 
+
+====================================================================
+	Faqs Section Two
+====================================================================
+
+***/
+
+.faq-section-two{
+	position: relative;
+	padding: 160px 0 150px;
+	@include media-breakpoint-down(lg){
+		padding: 120px 0;
+	}
+	.faq-column{
+		@include media-breakpoint-down(lg){
+			margin-bottom: 50px;
+		}
+		.inner-column{
+			padding-left: 70px;
+			padding-right: 100px;
+			padding-bottom: 10px;
+			border-left: 8px solid var(--theme-color2);
+			@include media-breakpoint-down(xl){
+				padding: 0;
+				border: 0;
+			}
+		}
+	}
+	.float-image{
+		position: absolute;
+		right: -170px;
+		bottom: 0;
+		@include media-breakpoint-down(xl){
+			display: none;
+		}
+	}
+}
