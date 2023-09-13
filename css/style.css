@@ -752,8 +752,9 @@ li {
   background-repeat: no-repeat;
   -webkit-animation: zoom-two 1.5s infinite linear;
           animation: zoom-two 1.5s infinite linear;
-  background-image: url(../images/favicon.png);
+  background-image: url(../images/logo.png);
   content: "";
+  background-size: contain;
 }
 
 .preloader:before, .faqs-section .preloader.bg-image:after {
@@ -2466,8 +2467,9 @@ Main Header
   display: block;
 }
 .main-header .logo img {
-  max-width: 100%;
   height: auto;
+  mix-blend-mode: multiply;
+  max-width: 190px;
 }
 .main-header .main-box {
   position: relative;
@@ -4375,6 +4377,7 @@ Section Title
   margin-top: 5px;
 }
 .banner-section-three .exp-box .text {
+  padding-left: 30px;
   font-size: 10px;
   line-height: 1.2em;
   text-transform: uppercase;
@@ -10276,6 +10279,7 @@ Section Title
 }
 .clients-section .sec-title h3 {
   font-size: 30px;
+  padding-top: 100px;
 }
 
 .client-block {
@@ -10288,10 +10292,13 @@ Section Title
 }
 .client-block a {
   position: relative;
-  display: block;
+  display: flex;
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 .client-block a:hover img {
   opacity: 1;
