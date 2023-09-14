@@ -1,0 +1,25 @@
+<?php
+
+include $_SERVER['DOCUMENT_ROOT'] . "/admin/server/db.php";
+global $con;
+
+if(isset($_POST['set_session'])){
+    set_session($_POST['lang']);
+}
+
+function set_session($lang){
+    session_start();
+
+    if ($lang === 'lv'){
+        $_SESSION['lang'] = 'lv';
+    } else {
+        $_SESSION['lang'] = 'en';
+    }
+}
+
+function check_session(){
+    if (!$_SESSION['lang']) {
+        $_SESSION['lang'] = 'en';
+    }
+}
+check_session();

@@ -3251,7 +3251,20 @@ Header Style One
             justify-content: flex-end;
     padding-right: 20px;
   }
+
 }
+@media (max-width: 1023px) {
+  #home > div.header-lower > div > div.nav-outer > nav{
+    display: none;
+  }
+
+  .main-header .main-box .nav-outer {
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+}
+
 .header-style-three .outer-box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3306,6 +3319,7 @@ Header Style One
 .header-style-three .info-btn {
   margin-left: 40px;
   color: #fff;
+  flex-flow: wrap;
 }
 @media only screen and (max-width: 1699px) {
   .header-style-three .info-btn {
@@ -14489,6 +14503,37 @@ Sidebar
   font-weight: 400;
   letter-spacing: -0.025em;
   margin-bottom: 0px;
+}
+.header__inner-lang:hover {
+  color: #30323d;
+}
+
+.header__inner-lang.active {
+  color: white;
+  display: inline-block;
+  border-bottom: 1px solid white;
+}
+.header__inner-lang:first-child {
+  margin-right: 15px;
+}
+.header__inner-lang {
+  padding-bottom: 5px;
+  color: #acacac;
+  transition: .4s all;
+  cursor: pointer;
+}
+.header__inner-languages{
+  align-self: center;
+  text-align: center;
+  padding-right: 30px;
+}
+.header__inner-languages a{
+  font-weight: 1000;
+}
+.nav.main-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .footer-bottom .copyright-text {
