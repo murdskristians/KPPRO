@@ -8,12 +8,10 @@ global $main_page_translations;
 // Decode the JSON string into a PHP associative array
 $translations = json_decode($main_page_translations, true);
 
-//echo $translations['lv']['shipments_delivered'];
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang ?>">
 <head>
     <meta charset="utf-8">
     <title><?php echo $translations[$lang]['head_title']; ?></title>
