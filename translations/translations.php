@@ -92,7 +92,7 @@ $main_page_translations = '{
     "call_now": "Jetzt anrufen",
     "send_email": "E-Mail senden",
     "shipments_delivered": "Sendungen zugestellt",
-    "transport_is_easy": "Der Transport ist einfach",
+    "transportation_is_easy": "Der Transport ist einfach",
     "know_more_us": "Mehr über uns erfahren",
     "fleet_consists_1": "Die Flotte besteht aus ",
     "fleet_consists_2": "15 (EIRO 5 und EIRO 6 Standard) Lastwagen",

@@ -14513,8 +14513,8 @@ Sidebar
   display: inline-block;
   border-bottom: 1px solid white;
 }
-.header__inner-lang:first-child {
-  margin-right: 15px;
+.header__inner-lang:not(:last-child) {
+  margin-right: 7px;
 }
 .header__inner-lang {
   padding-bottom: 5px;

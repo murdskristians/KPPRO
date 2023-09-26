@@ -66,7 +66,7 @@ $translations = json_decode($main_page_translations, true);
                             <a class="header__inner-lang" id="en_btn">EN</a>
                             <a class="header__inner-lang" id="lv_btn">LV</a>
                             <a class="header__inner-lang" id="de_btn">DE</a>
-<!--                            <a class="header__inner-lang" id="cn_btn">CN</a>-->
+                            <a class="header__inner-lang" id="cn_btn">CN</a>
                         </div>
                     </nav>
 
@@ -130,51 +130,9 @@ $translations = json_decode($main_page_translations, true);
                     <a class="header__inner-lang" id="cn_btn_mob">CN</a>
                 </div>
 
-
-eeeeee
-                <div class="sel-disclosure sel-basic sel-view-all sel-languages">
-                    yooo
-                    <div class="sel-disclosure-btn sel-view-all sel-top">
-                        <div class="sel-iconWrapper"><img class="sel-icon" alt="Latvian" loading="lazy"
-                                                          src="https://cdn.devit.software/selectors/sdk/images/languages/flags/rectangle/lv.svg">
-                        </div>
-                        <span class="sel-title sel-uppercase" data-code="lv" style="width: 21px;">lv</span>
-                        <div class="sel-pointer" style="margin-left: auto;">
-                            <style>
-                                .sel-triangle {
-                                    display: block;
-                                    width: 0;
-                                    height: 0;
-                                    border-style: solid;
-                                    border-width: 5px 0 5px 5px;
-                                    border-color: transparent transparent transparent rgba(32, 34, 35, 0.80);
-                                }
-                            </style>
-                            <span class="sel-pointer-wrapper"><span class="sel-pointerContainer sel-pointer--top"><span
-                                            class="sel-triangle"></span></span></span></div>
-                    </div>
-                    <div class="sel-itemsContainer sel-view-all sel-itemsList-top sel-itemsList-right">
-                        <ul class="sel-itemsList">
-                            <li class="sel-item" data-code="en" data-id="0" data-title="English">
-                                <div class="sel-item-container">
-                                    <div class="sel-iconWrapper"><img class="sel-icon" alt="English" loading="lazy"
-                                                                      src="https://cdn.devit.software/selectors/sdk/images/languages/flags/rectangle/en.svg">
-                                    </div>
-                                    <span class="sel-title sel-uppercase" data-code="en">en</span></div>
-                            </li>
-                            <li class="sel-item" data-code="ru" data-id="2" data-title="Русский">
-                                <div class="sel-item-container">
-                                    <div class="sel-iconWrapper"><img class="sel-icon" alt="Russian" loading="lazy"
-                                                                      src="https://cdn.devit.software/selectors/sdk/images/languages/flags/rectangle/ru.svg">
-                                    </div>
-                                    <span class="sel-title sel-uppercase" data-code="ru">ru</span></div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
             </nav>
-        </div><!-- End Mobile Menu -->
+        </div>
+        <!-- End Mobile Menu -->
 
         <!-- Header Search -->
         <div class="search-popup">
@@ -555,6 +513,6 @@ eeeeee
 <script src="js/select2.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
-<script src="js/languageChange.js"></script>
+<script src="js/languageChange.js?<?php echo microtime(); ?>"></script>
 </body>
 </html>
