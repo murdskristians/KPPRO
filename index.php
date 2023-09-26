@@ -70,9 +70,10 @@ $translations = json_decode($main_page_translations, true);
 
                     <div class="outer-box">
 
-                        <a href="tel:+92(8800)9806" class="info-btn">
+                        <a href="tel:+37129714481" class="info-btn">
                             <i class="icon fa fa-phone"></i>
-                            <small>Call Us Now</small> +371 29714481
+                            <small>Call Us Now</small> <span class="text-nowrap">+371 29714481</span>
+
                         </a>
 
                         <a href="#contact" class="theme-btn btn-style-one"><span
