@@ -2,6 +2,7 @@ lv_btn_mob = document.getElementById('lv_btn_mob');
 en_btn_mob = document.getElementById('en_btn_mob');
 lv_btn = document.getElementById('lv_btn');
 en_btn = document.getElementById('en_btn');
+de_btn = document.getElementById('de_btn');
 
 function addLangBtnClickListener(id, language) {
     document.getElementById(id).addEventListener('click', function() {
@@ -12,6 +13,8 @@ addLangBtnClickListener('lv_btn_mob', 'lv');
 addLangBtnClickListener('en_btn_mob', 'en');
 addLangBtnClickListener('lv_btn', 'lv');
 addLangBtnClickListener('en_btn', 'en');
+addLangBtnClickListener('de_btn', 'de');
+// addLangBtnClickListener('cn_btn', 'cn');
 
 function set_session(lang){
     const uri = "/server/languageChange_f.php";
