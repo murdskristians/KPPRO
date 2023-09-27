@@ -404,7 +404,7 @@ $translations = json_decode($main_page_translations, true);
                             <span class="sub-title">
                                 <?php echo $translations[$lang]['any_help']; ?>
                             </span>
-                            <h2>
+                            <h2 id="form-title">
                                 <?php echo $translations[$lang]['get_in_touch']; ?>
                             </h2>
                             <div class="text">
@@ -415,17 +415,19 @@ $translations = json_decode($main_page_translations, true);
                 </div>
                 <div class="col-xl-7 offset-xl-1 col-lg-6">
                     <!-- Contact Form -->
-                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+
+<!--                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">-->
+                    <form id="contact_form">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_name" class="form-control" type="text"
+                                    <input name="form_name" class="form-control" type="text" id="contact_name"
                                            placeholder="<?php echo $translations[$lang]['form_name']; ?>">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_email" class="form-control required email" type="email"
+                                    <input name="form_email" class="form-control required email" type="email" id="contact_email"
                                            placeholder="<?php echo $translations[$lang]['form_email']; ?>">
                                 </div>
                             </div>
@@ -433,28 +435,41 @@ $translations = json_decode($main_page_translations, true);
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_subject" class="form-control required" type="text"
+<!--                                    NAV Tāda pārbaude uztaisīta vel -->
+                                    <input name="form_subject" class="form-control required" type="text" id="contact_subject"
                                            placeholder="<?php echo $translations[$lang]['form_subject']; ?>">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_phone" class="form-control" type="text"
+                                    <input name="form_phone" class="form-control" type="text" id="contact_phone"
                                            placeholder="<?php echo $translations[$lang]['form_phone']; ?>">
                                 </div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <textarea name="form_message" class="form-control required" rows="7"
+                            <textarea name="form_message" class="form-control required" rows="7" id="contact_message"
                                       placeholder="<?php echo $translations[$lang]['form_message']; ?>"></textarea>
                         </div>
+
+
+
+                        <div id="contact_response"
+                             style="display:none"> <?php echo nl2br($translations[$lang]['response']) ?> </div>
+
+
                         <div class="mb-3">
                             <input name="form_botcheck" class="form-control" type="hidden" value=""/>
-                            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">
+<!--                            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..." id="submitBtn">-->
+<!--                                <span class="btn-title">-->
+<!--                                    --><?php //echo $translations[$lang]['send_message']; ?>
+<!--                                </span>-->
+<!--                            </button>-->
+                            <div class="theme-btn btn-style-one" data-loading-text="Please wait..." id="submitBtn">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['send_message']; ?>
                                 </span>
-                            </button>
+                            </div>
                             <button type="reset" class="theme-btn btn-style-one bg-theme-color5">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['reset']; ?>
@@ -513,5 +528,7 @@ $translations = json_decode($main_page_translations, true);
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
 <script src="js/languageChange.js?<?php echo microtime(); ?>"></script>
+<script src="/js/message_modal.js?<?php echo microtime(); ?>"></script>
+<script src="js/contact_form.js?<?php echo microtime(); ?>" onload="contact_form_set('<?php echo $lang; ?>')"></script>
 </body>
 </html>

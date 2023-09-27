@@ -36,7 +36,7 @@ $main_page_translations = '{
         "send_message": "Sūtīt ziņu",
         "reset": "Atiestatīt",
         "form_name": "Ieraksti vārdu",
-        "form_email": "Ieraksti uzvārdu",
+        "form_email": "Ieraksti epastu",
         "form_subject": "Ieraksti tēmu",
         "form_phone": "Ieraksti telefona numuru",
         "form_message": "Ieraksti ziņu"

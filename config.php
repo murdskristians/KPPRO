@@ -26,11 +26,11 @@
     $GLOBALS['db_pw'] = '235dZ4pIaoc~hStyt';
     $GLOBALS['db_name'] = 'arkadb';
 
-//    $GLOBALS['shop_email_server'] = 'mail.shopdev.lv';
-//    $GLOBALS['shop_email'] = 'arka@shopdev.lv';
-//    $GLOBALS['shop_email_pw'] = 'Janekr5t3t_8C4fOi';
-//
-//    $GLOBALS['shop_receiving_email'] = 'arka@shopdev.lv';
-//    $GLOBALS['shop_receiving_email_pw'] = 'Janekr5t3t_8C4fOi';
+    $GLOBALS['shop_email_server'] = 'mail.shopdev.lv';
+    $GLOBALS['shop_email'] = 'arka@shopdev.lv';
+    $GLOBALS['shop_email_pw'] = 'Janekr5t3t_8C4fOi';
+
+    $GLOBALS['shop_receiving_email'] = 'arka@shopdev.lv';
+    $GLOBALS['shop_receiving_email_pw'] = 'Janekr5t3t_8C4fOi';
 
 //}
