@@ -404,7 +404,7 @@ $translations = json_decode($main_page_translations, true);
                             <span class="sub-title">
                                 <?php echo $translations[$lang]['any_help']; ?>
                             </span>
-                            <h2 id="form-title">
+                            <h2 id="form_title">
                                 <?php echo $translations[$lang]['get_in_touch']; ?>
                             </h2>
                             <div class="text">
@@ -415,7 +415,7 @@ $translations = json_decode($main_page_translations, true);
                 </div>
                 <div class="col-xl-7 offset-xl-1 col-lg-6">
                     <!-- Contact Form -->
-
+<!--Old form version-->
 <!--                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">-->
                     <form id="contact_form">
                         <div class="row">
@@ -435,7 +435,6 @@ $translations = json_decode($main_page_translations, true);
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="mb-3">
-<!--                                    NAV Tāda pārbaude uztaisīta vel -->
                                     <input name="form_subject" class="form-control required" type="text" id="contact_subject"
                                            placeholder="<?php echo $translations[$lang]['form_subject']; ?>">
                                 </div>
@@ -455,16 +454,11 @@ $translations = json_decode($main_page_translations, true);
 
 
                         <div id="contact_response"
-                             style="display:none"> <?php echo nl2br($translations[$lang]['response1']) ?> <br> <?php echo nl2br($translations[$lang]['response2']) ?> </div>
+                             style="display:none"> <?php echo nl2br($translations[$lang]['response1']) ?> <br><br> <?php echo nl2br($translations[$lang]['response2']) ?> </div>
 
 
                         <div class="mb-3">
                             <input name="form_botcheck" class="form-control" type="hidden" value=""/>
-<!--                            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait..." id="submitBtn">-->
-<!--                                <span class="btn-title">-->
-<!--                                    --><?php //echo $translations[$lang]['send_message']; ?>
-<!--                                </span>-->
-<!--                            </button>-->
                             <div class="theme-btn btn-style-one" data-loading-text="Please wait..." id="submitBtn">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['send_message']; ?>
