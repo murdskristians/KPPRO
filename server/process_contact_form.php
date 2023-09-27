@@ -122,3 +122,15 @@ function contact_form(): void
 
 }
 
+function get_product_data_by_id($id)
+{
+    global $con;
+
+    $query = "SELECT * FROM products WHERE id = $id;";
+
+    $result = mysqli_query($con,$query);
+
+    $row = mysqli_fetch_assoc($result);
+
+    return $row['product_title'];
+}

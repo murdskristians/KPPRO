@@ -73,7 +73,8 @@ function contact_form_set(lang){
         }
     };
 
-    let submitBtn2 = document.getElementById('submitBtn');
+    let submitBtn = document.getElementById('submitBtn');
+    let resetBtn = document.getElementById('resetBtn');
     let name_input = document.getElementById('contact_name');
     let email_input = document.getElementById('contact_email');
     let phone_input = document.getElementById('contact_phone');
@@ -150,8 +151,8 @@ function contact_form_set(lang){
                     message_input.style.display = 'none';
                     subject_input.style.display = 'none';
                     response.style.display = "block";
-                    submitBtn2.style.display = 'none';
-
+                    submitBtn.style.display = 'none';
+                    resetBtn.style.display = 'none';
                 }
             }
         }
@@ -177,5 +178,5 @@ function contact_form_set(lang){
         xmlhttp.send(fd);
     }
 
-    submitBtn2.addEventListener('click', contact_form);
+    submitBtn.addEventListener('click', contact_form);
 }

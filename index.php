@@ -455,7 +455,7 @@ $translations = json_decode($main_page_translations, true);
 
 
                         <div id="contact_response"
-                             style="display:none"> <?php echo nl2br($translations[$lang]['response']) ?> </div>
+                             style="display:none"> <?php echo nl2br($translations[$lang]['response1']) ?> <br> <?php echo nl2br($translations[$lang]['response2']) ?> </div>
 
 
                         <div class="mb-3">
@@ -470,7 +470,7 @@ $translations = json_decode($main_page_translations, true);
                                     <?php echo $translations[$lang]['send_message']; ?>
                                 </span>
                             </div>
-                            <button type="reset" class="theme-btn btn-style-one bg-theme-color5">
+                            <button type="reset" class="theme-btn btn-style-one bg-theme-color5" id="resetBtn">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['reset']; ?>
                                 </span>

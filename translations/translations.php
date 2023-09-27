@@ -39,7 +39,9 @@ $main_page_translations = '{
         "form_email": "Ieraksti epastu",
         "form_subject": "Ieraksti tēmu",
         "form_phone": "Ieraksti telefona numuru",
-        "form_message": "Ieraksti ziņu"
+        "form_message": "Ieraksti ziņu",
+        "response1": "Thank you for message!", 
+        "response2": "We will answer within 2 working days."
     },
 "en": {
     "head_title": "KP PRO",
@@ -80,7 +82,9 @@ $main_page_translations = '{
     "form_email": "Enter Email",
     "form_subject": "Enter Subject",
     "form_phone": "Enter Phone",
-    "form_message": "Enter Message"
+    "form_message": "Enter Message",
+    "response1": "Thank you for message!", 
+    "response2": "We will answer within 2 working days."
 },
 "de": {
     "head_title": "KP PRO",
@@ -121,8 +125,9 @@ $main_page_translations = '{
     "form_email": "E-Mail eingeben",
     "form_subject": "Betreff eingeben",
     "form_phone": "Telefon eingeben",
-    "form_message": "Nachricht eingeben"
-},
+    "form_message": "Nachricht eingeben",
+    "response1": "Thank you for message!", 
+    "response2": "We will answer within 2 working days."},
 "cn": {
     "head_title": "KP PRO",
     "navigation_home": "主页",
@@ -162,7 +167,8 @@ $main_page_translations = '{
     "form_email": "输入电子邮件",
     "form_subject": "输入主题",
     "form_phone": "输入电话",
-    "form_message": "输入信息"
-}
+    "form_message": "输入信息",
+    "response1": "Thank you for message!", 
+    "response2": "We will answer within 2 working days."}
 
 }';
