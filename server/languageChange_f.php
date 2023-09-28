@@ -10,11 +10,7 @@ if(isset($_POST['set_session'])){
 function set_session($lang){
     session_start();
 
-    if ($lang === 'lv'){
-        $_SESSION['lang'] = 'lv';
-    } else {
-        $_SESSION['lang'] = 'en';
-    }
+    $_SESSION['lang'] = $lang;
 }
 
 function check_session(){

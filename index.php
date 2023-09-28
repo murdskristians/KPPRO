@@ -8,12 +8,10 @@ global $main_page_translations;
 // Decode the JSON string into a PHP associative array
 $translations = json_decode($main_page_translations, true);
 
-//echo $translations['lv']['shipments_delivered'];
-
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php echo $lang ?>">
 <head>
     <meta charset="utf-8">
     <title><?php echo $translations[$lang]['head_title']; ?></title>
@@ -27,8 +25,10 @@ $translations = json_decode($main_page_translations, true);
     <!-- Responsive -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
+    <!--[if lt IE 9]>
+    <script src="js/respond.js"></script><![endif]-->
 </head>
 
 <body>
@@ -45,7 +45,8 @@ $translations = json_decode($main_page_translations, true);
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt="KP PRO Logo" title="KP PRO"></a></div>
+                    <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt="KP PRO Logo"
+                                                                    title="KP PRO"></a></div>
                 </div>
 
                 <!--Nav Box-->
@@ -53,7 +54,8 @@ $translations = json_decode($main_page_translations, true);
 
                     <nav class="nav main-menu">
                         <ul class="navigation">
-                            <li class="current"><a href="#home"><?php echo $translations[$lang]['navigation_home']; ?></a></li>
+                            <li class="current"><a
+                                        href="#home"><?php echo $translations[$lang]['navigation_home']; ?></a></li>
                             <li><a href="#services"><?php echo $translations[$lang]['navigation_services']; ?></a></li>
                             <li><a href="#partners"><?php echo $translations[$lang]['navigation_partners']; ?></a></li>
                             <li><a href="#contact"><?php echo $translations[$lang]['navigation_contact']; ?></a></li>
@@ -61,17 +63,22 @@ $translations = json_decode($main_page_translations, true);
                         <div class="header__inner-languages">
                             <a class="header__inner-lang" id="en_btn">EN</a>
                             <a class="header__inner-lang" id="lv_btn">LV</a>
+                            <a class="header__inner-lang" id="de_btn">DE</a>
+                            <a class="header__inner-lang" id="cn_btn">CN</a>
                         </div>
                     </nav>
 
                     <div class="outer-box">
 
-                        <a href="tel:+92(8800)9806" class="info-btn">
+                        <a href="tel:+37129714481" class="info-btn">
                             <i class="icon fa fa-phone"></i>
-                            <small>Call Us Now</small> +371 29714481
+                            <small>Call Us Now</small> <span class="text-nowrap">+371 29714481</span>
+
                         </a>
 
-                        <a href="#contact" class="theme-btn btn-style-one"><span class="btn-title"><?php echo $translations[$lang]['get_a_quote']; ?><i class="lnr-icon-arrow-up"></i></span></a>
+                        <a href="#contact" class="theme-btn btn-style-one"><span
+                                    class="btn-title"><?php echo $translations[$lang]['get_a_quote']; ?><i
+                                        class="lnr-icon-arrow-up"></i></span></a>
 
                         <!-- Mobile Nav toggler -->
                         <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
@@ -114,16 +121,17 @@ $translations = json_decode($main_page_translations, true);
                     </li>
                     <li>
                 </ul>
-                <ul>
-                    <div class="header__inner-languages">
-                        <a class="header__inner-lang" id="en_btn_mob">EN</a>
-                        <a class="header__inner-lang" id="lv_btn_mob">LV</a>
-                    </div>
-                </ul>
 
+                <div class="header__inner-languages">
+                    <a class="header__inner-lang" id="en_btn_mob">EN</a>
+                    <a class="header__inner-lang" id="lv_btn_mob">LV</a>
+                    <a class="header__inner-lang" id="de_btn_mob">DE</a>
+                    <a class="header__inner-lang" id="cn_btn_mob">CN</a>
+                </div>
 
             </nav>
-        </div><!-- End Mobile Menu -->
+        </div>
+        <!-- End Mobile Menu -->
 
         <!-- Header Search -->
         <div class="search-popup">
@@ -197,7 +205,8 @@ $translations = json_decode($main_page_translations, true);
                 </div>
 
                 <div class="image-column col-xl-5 col-lg-6 col-md-12">
-                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img src="images/main-slider/truck2.png" alt=""></figure>
+                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img src="images/main-slider/truck2.png"
+                                                                                  alt=""></figure>
                 </div>
             </div>
         </div>
@@ -215,7 +224,8 @@ $translations = json_decode($main_page_translations, true);
                     <!-- Title Column -->
                     <div class="title-column col-lg-6">
                         <div class="sec-title">
-                            <h2><?php echo $translations[$lang]['fleet_consists_1']; ?><br><?php echo $translations[$lang]['fleet_consists_2']; ?></h2>
+                            <h2><?php echo $translations[$lang]['fleet_consists_1']; ?>
+                                <br><?php echo $translations[$lang]['fleet_consists_2']; ?></h2>
                             <div class="text"><?php echo $translations[$lang]['the_experience']; ?></div>
                         </div>
                     </div>
@@ -226,14 +236,17 @@ $translations = json_decode($main_page_translations, true);
                             <div class="exp-box">
                                 <i class="fade-icon flaticon-delivery-box-4"></i>
                                 <i class="icon flaticon-delivery-box-4"></i>
-                                <h4 class="title"><?php echo $translations[$lang]['kppro_has_been1']; ?><span class="color1"><?php echo $translations[$lang]['kppro_has_been2']; ?></span><?php echo $translations[$lang]['kppro_has_been3']; ?></h4>
+                                <h4 class="title"><?php echo $translations[$lang]['kppro_has_been1']; ?><span
+                                            class="color1"><?php echo $translations[$lang]['kppro_has_been2']; ?></span><?php echo $translations[$lang]['kppro_has_been3']; ?>
+                                </h4>
                             </div>
 
                             <div class="fact-counter">
                                 <!-- Counter block Two -->
                                 <div class="counter-block-two">
                                     <div class="inner">
-                                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="6">0</span>+</div>
+                                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="6">0</span>+
+                                        </div>
                                         <h4 class="counter-title"><?php echo $translations[$lang]['years_of_experience']; ?></h4>
                                     </div>
                                 </div>
@@ -241,7 +254,8 @@ $translations = json_decode($main_page_translations, true);
                                 <!-- Counter block Two -->
                                 <div class="counter-block-two">
                                     <div class="inner">
-                                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="3">0</span>+</div>
+                                        <div class="count-box"><span class="count-text" data-speed="3000" data-stop="3">0</span>+
+                                        </div>
                                         <h4 class="counter-title"><?php echo $translations[$lang]['countries']; ?></h4>
                                     </div>
                                 </div>
@@ -262,7 +276,9 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box"><i class="icon flaticon-airplane-2"></i></div>
-                                <h6 class="title"><a href="page-service-details.html"><?php echo $translations[$lang]['refrigerated_transport']; ?></a></h6>
+                                <h6 class="title"><a
+                                            href="page-service-details.html"><?php echo $translations[$lang]['refrigerated_transport']; ?></a>
+                                </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['controlled_transport']; ?></div>
                                 </div>
@@ -278,7 +294,9 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box"><i class="icon flaticon-cargo-boat"></i></div>
-                                <h6 class="title"><a href="page-service-details.html"><?php echo $translations[$lang]['ocean_fright']; ?></a></h6>
+                                <h6 class="title"><a
+                                            href="page-service-details.html"><?php echo $translations[$lang]['ocean_fright']; ?></a>
+                                </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['platform_deliveries']; ?></div>
                                 </div>
@@ -294,7 +312,9 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box"><i class="icon flaticon-delivery-truck-4"></i></div>
-                                <h6 class="title"><a href="page-service-details.html"><?php echo $translations[$lang]['large']; ?></a></h6>
+                                <h6 class="title"><a
+                                            href="page-service-details.html"><?php echo $translations[$lang]['large']; ?></a>
+                                </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['low_platforms']; ?></div>
                                 </div>
@@ -358,15 +378,15 @@ $translations = json_decode($main_page_translations, true);
                 <div class="sponsors-outer">
                     <!--clients carousel-->
                     <ul class="clients-carousel owl-carousel owl-theme">
-                        <li class="client-block"> <a href="#"><img src="images/clients/CmaCgm.jpg" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Cosco.png" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Depo.png" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Emc.jpg" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Intercars.png" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/YangMing.jpg" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Lidl.png" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/MaerskLine.png" alt=""></a> </li>
-                        <li class="client-block"> <a href="#"><img src="images/clients/Oocl.jpg" alt=""></a> </li>
+                        <li class="client-block"><a href="#"><img src="images/clients/CmaCgm.jpg" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Cosco.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Depo.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Emc.jpg" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Intercars.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/YangMing.jpg" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Lidl.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/MaerskLine.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/clients/Oocl.jpg" alt=""></a></li>
                     </ul>
                 </div>
             </div>
@@ -384,7 +404,7 @@ $translations = json_decode($main_page_translations, true);
                             <span class="sub-title">
                                 <?php echo $translations[$lang]['any_help']; ?>
                             </span>
-                            <h2>
+                            <h2 id="form_title">
                                 <?php echo $translations[$lang]['get_in_touch']; ?>
                             </h2>
                             <div class="text">
@@ -395,42 +415,56 @@ $translations = json_decode($main_page_translations, true);
                 </div>
                 <div class="col-xl-7 offset-xl-1 col-lg-6">
                     <!-- Contact Form -->
-                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">
+<!--Old form version-->
+<!--                    <form id="contact_form" name="contact_form" class="" action="includes/sendmail.php" method="post">-->
+                    <form id="contact_form">
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_name" class="form-control" type="text" placeholder="<?php echo $translations[$lang]['form_name']; ?>">
+                                    <input name="form_name" class="form-control" type="text" id="contact_name"
+                                           placeholder="<?php echo $translations[$lang]['form_name']; ?>">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_email" class="form-control required email" type="email" placeholder="<?php echo $translations[$lang]['form_email']; ?>">
+                                    <input name="form_email" class="form-control required email" type="email" id="contact_email"
+                                           placeholder="<?php echo $translations[$lang]['form_email']; ?>">
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_subject" class="form-control required" type="text" placeholder="<?php echo $translations[$lang]['form_subject']; ?>">
+                                    <input name="form_subject" class="form-control required" type="text" id="contact_subject"
+                                           placeholder="<?php echo $translations[$lang]['form_subject']; ?>">
                                 </div>
                             </div>
                             <div class="col-sm-6">
                                 <div class="mb-3">
-                                    <input name="form_phone" class="form-control" type="text" placeholder="<?php echo $translations[$lang]['form_phone']; ?>">
+                                    <input name="form_phone" class="form-control" type="text" id="contact_phone"
+                                           placeholder="<?php echo $translations[$lang]['form_phone']; ?>">
                                 </div>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <textarea name="form_message" class="form-control required" rows="7" placeholder="<?php echo $translations[$lang]['form_message']; ?>"></textarea>
+                            <textarea name="form_message" class="form-control required" rows="7" id="contact_message"
+                                      placeholder="<?php echo $translations[$lang]['form_message']; ?>"></textarea>
                         </div>
+
+
+
+                        <div id="contact_response"
+                             style="display:none"> <?php echo nl2br($translations[$lang]['response1']) ?> <br><br> <?php echo nl2br($translations[$lang]['response2']) ?> </div>
+
+
                         <div class="mb-3">
-                            <input name="form_botcheck" class="form-control" type="hidden" value="" />
-                            <button type="submit" class="theme-btn btn-style-one" data-loading-text="Please wait...">
+                            <input name="form_botcheck" class="form-control" type="hidden" value=""/>
+                            <div class="theme-btn btn-style-one" data-loading-text="Please wait..." id="submitBtn">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['send_message']; ?>
                                 </span>
-                            </button>
-                            <button type="reset" class="theme-btn btn-style-one bg-theme-color5">
+                            </div>
+                            <button type="reset" class="theme-btn btn-style-one bg-theme-color5" id="resetBtn">
                                 <span class="btn-title">
                                     <?php echo $translations[$lang]['reset']; ?>
                                 </span>
@@ -459,7 +493,8 @@ $translations = json_decode($main_page_translations, true);
                             <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
                                 <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
-                                <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.lv">info@kppro.lv</a><br></li>
+                                <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.lv">info@kppro.lv</a><br>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -486,6 +521,8 @@ $translations = json_decode($main_page_translations, true);
 <script src="js/select2.min.js"></script>
 <script src="js/owl.js"></script>
 <script src="js/script.js"></script>
-<script src="js/languageChange.js"></script>
+<script src="js/languageChange.js?<?php echo microtime(); ?>"></script>
+<script src="/js/message_modal.js?<?php echo microtime(); ?>"></script>
+<script src="js/contact_form.js?<?php echo microtime(); ?>" onload="contact_form_set('<?php echo $lang; ?>')"></script>
 </body>
 </html>

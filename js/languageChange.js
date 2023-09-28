@@ -1,17 +1,27 @@
-lv_btn_mob = document.getElementById('lv_btn_mob');
-en_btn_mob = document.getElementById('en_btn_mob');
-lv_btn = document.getElementById('lv_btn');
-en_btn = document.getElementById('en_btn');
+addLangBtnClickListener('lv_btn_mob', 'lv');
+addLangBtnClickListener('en_btn_mob', 'en');
+addLangBtnClickListener('de_btn_mob', 'de');
+addLangBtnClickListener('cn_btn_mob', 'cn');
+
+addLangBtnClickListener('lv_btn', 'lv');
+addLangBtnClickListener('en_btn', 'en');
+addLangBtnClickListener('de_btn', 'de');
+addLangBtnClickListener('cn_btn', 'cn');
+
 
 function addLangBtnClickListener(id, language) {
     document.getElementById(id).addEventListener('click', function() {
         changeLanguage(language, this);
+        setActiveButton(this);
+        // console.log('add click',id, language);
     });
 }
-addLangBtnClickListener('lv_btn_mob', 'lv');
-addLangBtnClickListener('en_btn_mob', 'en');
-addLangBtnClickListener('lv_btn', 'lv');
-addLangBtnClickListener('en_btn', 'en');
+
+function changeLanguage(lang, el) {
+    // console.log("Change language fun.",el.id, el, lang);
+    el.classList.toggle('active');
+    set_session(lang);
+}
 
 function set_session(lang){
     const uri = "/server/languageChange_f.php";
@@ -26,43 +36,18 @@ function set_session(lang){
             location.reload();
         }
     }
-
     fd.append('set_session', '1');
     fd.append('lang', lang);
 
     xmlhttp.send(fd);
 }
 
-function changeLanguage(lang, el) {
-
-    // if (el.id === 'lv_btn') {
-    //     lv_btn.classList.add('active');
-    //     en_btn.classList.remove('active');
-    // } else if (el.id === 'en_btn') {
-    //     lv_btn.classList.remove('active');
-    //     en_btn.classList.add('active');
-    // } else if (el.id === 'lv_btn_mob') {
-    //     lv_btn_mob.classList.add('active');
-    //     en_btn_mob.classList.remove('active');
-    // } else if (el.id === 'en_btn_mob') {
-    //     lv_btn_mob.classList.remove('active');
-    //     en_btn_mob.classList.add('active');
-    // }
-
-
-
-    console.log(el.id);
-    el.classList.toggle('active');
-    set_session(lang);
-}
-
-
 // Function to set the active button and store its ID in localStorage
 function setActiveButton(el) {
     let buttonId = el.id;
 
     // Remove 'active' class from all buttons
-    document.querySelectorAll('.your-button-class').forEach(function (button) {
+    document.querySelectorAll('.header__inner-lang').forEach(function (button) {
         button.classList.remove('active');
     });
 
@@ -70,16 +55,18 @@ function setActiveButton(el) {
     el.classList.add('active');
 
     // Determine the corresponding button in the other pair
-    let otherButtonId;
-    if (buttonId === 'lv_btn') {
-        otherButtonId = 'lv_btn_mob';
-    } else if (buttonId === 'lv_btn_mob') {
-        otherButtonId = 'lv_btn';
-    } else if (buttonId === 'en_btn') {
-        otherButtonId = 'en_btn_mob';
-    } else if (buttonId === 'en_btn_mob') {
-        otherButtonId = 'en_btn';
-    }
+    const buttonMappings = {
+        'lv_btn': 'lv_btn_mob',
+        'lv_btn_mob': 'lv_btn',
+        'en_btn': 'en_btn_mob',
+        'en_btn_mob': 'en_btn',
+        'de_btn': 'de_btn_mob',
+        'de_btn_mob': 'de_btn',
+        'cn_btn': 'cn_btn_mob',
+        'cn_btn_mob': 'cn_btn'
+    };
+
+    let otherButtonId = buttonMappings[buttonId];
 
     // Add 'active' class to the corresponding button in the other pair
     let otherButton = document.getElementById(otherButtonId);
@@ -100,26 +87,9 @@ if (storedButtonId) {
     }
 } else {
     // If there's no stored active button ID, set a default active button here
-    let defaultActiveButton = document.getElementById('en_btn'); // Change 'lv_btn' to your default button ID
+    let defaultActiveButton = document.getElementById('en_btn'); // Change 'en_btn' to your default button ID
     setActiveButton(defaultActiveButton);
 }
-
-// Add click event listeners to your buttons
-document.getElementById('lv_btn').addEventListener('click', function () {
-    setActiveButton(this);
-});
-
-document.getElementById('en_btn').addEventListener('click', function () {
-    setActiveButton(this);
-});
-
-document.getElementById('lv_btn_mob').addEventListener('click', function () {
-    setActiveButton(this);
-});
-
-document.getElementById('en_btn_mob').addEventListener('click', function () {
-    setActiveButton(this);
-});
 
 
 
