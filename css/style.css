@@ -3204,9 +3204,13 @@ Header Style One
     min-height: auto;
     margin-bottom: 0;
     margin-right: 40px;
+    max-height: 75px;
   }
   .header-style-three .logo-box::before, .header-style-three .faqs-section .logo-box.bg-image:after, .faqs-section .header-style-three .logo-box.bg-image:after {
     display: none;
+  }
+  .main-header .logo img {
+    max-height: 55px;
   }
 }
 @media only screen and (max-width: 1400px) and (max-width: 575.98px) {
@@ -3229,8 +3233,9 @@ Header Style One
 }
 .header-style-three .main-box {
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-height: 75px;
 }
 .header-style-three .main-box .main-menu .navigation > li {
   margin-right: 60px;
