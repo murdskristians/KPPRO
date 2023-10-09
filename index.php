@@ -29,6 +29,12 @@ $translations = json_decode($main_page_translations, true);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script><![endif]-->
+
+    <style>
+        .service-block-three .content-box{
+            padding-top:100px !important;
+        }
+    </style>
 </head>
 
 <body>
@@ -215,9 +221,7 @@ $translations = json_decode($main_page_translations, true);
 
     <!-- Services Section Three-->
     <section id="services" class="services-section-three">
-        <div class="anim-icons">
-            <span class="icon icon-plane-6"></span>
-        </div>
+
         <div class="auto-container">
             <div class="upper-box">
                 <div class="row">
@@ -275,7 +279,7 @@ $translations = json_decode($main_page_translations, true);
                                 <figure class="image"><a><img src="images/resource/service3-1.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-airplane-2"></i></div>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
                                 <h6 class="title"><a
                                             href="page-service-details.html"><?php echo $translations[$lang]['refrigerated_transport']; ?></a>
                                 </h6>
@@ -293,7 +297,7 @@ $translations = json_decode($main_page_translations, true);
                                 <figure class="image"><a><img src="images/resource/service3-2.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-cargo-boat"></i></div>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
                                 <h6 class="title"><a
                                             href="page-service-details.html"><?php echo $translations[$lang]['ocean_fright']; ?></a>
                                 </h6>
@@ -311,7 +315,7 @@ $translations = json_decode($main_page_translations, true);
                                 <figure class="image"><a><img src="images/resource/service3-3.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-delivery-truck-4"></i></div>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-delivery-truck-4"></i></div>
                                 <h6 class="title"><a
                                             href="page-service-details.html"><?php echo $translations[$lang]['large']; ?></a>
                                 </h6>
@@ -509,7 +513,7 @@ $translations = json_decode($main_page_translations, true);
 
 
 <!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+<!--<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>-->
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
