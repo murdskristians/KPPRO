@@ -186,7 +186,7 @@ $translations = json_decode($main_page_translations, true);
 
     <!-- Banner Section -->
     <section class="banner-section-three">
-        <div class="bg bg-image" style="background-image: url(./images/main-slider/3.jpg)"></div>
+        <div class="bg bg-image" style="background-image: url(./images/wallpaper.png)"></div>
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
@@ -194,11 +194,11 @@ $translations = json_decode($main_page_translations, true);
                 <!-- Content Column -->
                 <div class="content-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
                     <div class="content-box">
-                        <div class="exp-box wow zoomIn" data-wow-delay="2500ms">
+                        <div class="exp-box wow zoomIn" data-wow-delay="2500ms" style="display: none;">
                             <div class="text"><?php echo $translations[$lang]['shipments_delivered']; ?></div>
-                            <span class="count">4000++</span>
+                            <span class="count" style="display: none;">4000++</span>
                         </div>
-                        <h1 class="title wow fadeInUp" data-wow-delay="1200ms">
+                        <h1 class="title wow fadeInUp" data-wow-delay="1200ms" style="text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.85);">
                             <?php echo $translations[$lang]['transportation_is_easy']; ?>
                         </h1>
                         <a href="#services" class="theme-btn btn-style-two wow fadeInUp" data-wow-delay="1800ms">
@@ -211,7 +211,7 @@ $translations = json_decode($main_page_translations, true);
                 </div>
 
                 <div class="image-column col-xl-5 col-lg-6 col-md-12">
-                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img src="images/main-slider/truck2.png"
+                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img style="transform:scale(2); position:relative; left:-50%;" src="images/truck7.png"
                                                                                   alt=""></figure>
                 </div>
             </div>
