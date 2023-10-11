@@ -34,6 +34,61 @@ $translations = json_decode($main_page_translations, true);
         .service-block-three .content-box{
             padding-top:100px !important;
         }
+        .icon_1{
+            background-image:url('/images/insurance_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon_2{
+            background-image:url('/images/customs_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon_3{
+            background-image:url('/images/truck_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon-box::after{
+            display: none;
+        }
+        .theme-btn{
+            cursor: pointer;
+        }
+        .cosco_logo{
+            background-image:url('/images/cosco-shipping-logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .msc_logo{
+            background-image:url('/images/msc-logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .evergreen_logo{
+            background-image:url('/images/evergreen-logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:190px;
+            height: 100px;
+            transform:scale(1.45);
+        }
     </style>
 </head>
 
@@ -210,6 +265,7 @@ $translations = json_decode($main_page_translations, true);
                     </div>
                 </div>
 
+
                 <div class="image-column col-xl-5 col-lg-6 col-md-12">
                     <figure class="image wow fadeInLeft" data-wow-delay="2s"><img style="transform:scale(2); position:relative; left:-50%;" src="images/truck7.png"
                                                                                   alt=""></figure>
@@ -238,8 +294,9 @@ $translations = json_decode($main_page_translations, true);
                     <div class="content-column col-lg-6">
                         <div class="inner-column">
                             <div class="exp-box">
-                                <i class="fade-icon flaticon-delivery-box-4"></i>
-                                <i class="icon flaticon-delivery-box-4"></i>
+                                <div class="icon_3"></div>
+<!--                                <i class="fade-icon flaticon-delivery-box-4"></i>-->
+<!--                                <i class="icon flaticon-delivery-box-4"></i>-->
                                 <h4 class="title"><?php echo $translations[$lang]['kppro_has_been1']; ?><span
                                             class="color1"><?php echo $translations[$lang]['kppro_has_been2']; ?></span><?php echo $translations[$lang]['kppro_has_been3']; ?>
                                 </h4>
@@ -276,7 +333,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-1.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/refrigerated_transport.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
@@ -294,7 +351,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-2.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/resource/service3-3.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
@@ -312,7 +369,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/platform_truck.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-delivery-truck-4"></i></div>
@@ -341,7 +398,10 @@ $translations = json_decode($main_page_translations, true);
                 <!-- Feature Block Three -->
                 <div class="feature-block-three col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon-box"><i class="icon flaticon-maps"></i></div>
+                        <div class="icon-box">
+<!--                            <i class="icon flaticon-maps"></i>-->
+                            <div class="icon_1"></div>
+                        </div>
                         <h6 class="title"><?php echo $translations[$lang]['cargo_insurance']; ?></h6>
                         <div class="text">
                             <?php echo $translations[$lang]['comprehensive_insurance']; ?>
@@ -352,7 +412,10 @@ $translations = json_decode($main_page_translations, true);
                 <!-- Feature Block Three -->
                 <div class="feature-block-three col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon-box"><i class="icon flaticon-logistics-9"></i></div>
+                        <div class="icon-box">
+<!--                            <i class="icon flaticon-logistics-9"></i>-->
+                            <div class="icon_2"></div>
+                        </div>
                         <h6 class="title"><?php echo $translations[$lang]['customs_formalities']; ?></h6>
                         <div class="text">
                             <?php echo $translations[$lang]['handle_all']; ?>
@@ -383,10 +446,25 @@ $translations = json_decode($main_page_translations, true);
                     <!--clients carousel-->
                     <ul class="clients-carousel owl-carousel owl-theme">
                         <li class="client-block"><a href="#"><img src="images/clients/CmaCgm.jpg" alt=""></a></li>
-                        <li class="client-block"><a href="#"><img src="images/clients/Cosco.png" alt=""></a></li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="cosco_logo"></div>
+                            </a>
+                        </li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="msc_logo"></div>
+                            </a>
+                        </li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="evergreen_logo"></div>
+                            </a>
+                        </li>
+
                         <li class="client-block"><a href="#"><img src="images/clients/Depo.png" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/Emc.jpg" alt=""></a></li>
-                        <li class="client-block"><a href="#"><img src="images/clients/Intercars.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/ic_new_logo.jpg" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/YangMing.jpg" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/Lidl.png" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/MaerskLine.png" alt=""></a></li>
