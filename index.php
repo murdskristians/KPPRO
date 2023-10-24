@@ -240,11 +240,11 @@ $translations = json_decode($main_page_translations, true);
     <!--End Main Header -->
 
     <section class="banner-section-two">
-        <div class="bg bg-image" style="background-image: url(./images/main-slider/2.jpg)"></div>
+        <div class="bg bg-image" style="background-image: url(./images/background.jpg)"></div>
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
-            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/main-slider/truck.png" alt=""></figure></div>
+            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/truckfit_main.png" style="max-width:1300px;" alt=""></figure></div>
             <div class="content-box">
                 <div class="title-box">
 <!--                    <span class="sub-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Best logistic service in the world</span>-->
@@ -256,41 +256,6 @@ $translations = json_decode($main_page_translations, true);
         </div>
     </section>
 
-    <!-- Banner Section -->
-<!--    <section class="banner-section-three">-->
-<!--        <div class="bg bg-image" style="background-image: url(./images/wallpaper.png)"></div>-->
-<!--        <div class="bottom-shape"></div>-->
-<!---->
-<!--        <div class="auto-container">-->
-<!--            <div class="row">-->
-<!--                <!-- Content Column -->-->
-<!--                <div class="content-column col-xl-7 col-lg-12 col-md-12 col-sm-12">-->
-<!--                    <div class="content-box">-->
-<!--                        <div class="exp-box wow zoomIn" data-wow-delay="2500ms" style="display: none;">-->
-<!--                            <div class="text">--><?php //echo $translations[$lang]['shipments_delivered']; ?><!--</div>-->
-<!--                            <span class="count" style="display: none;">4000++</span>-->
-<!--                        </div>-->
-<!--                        <h1 class="title wow fadeInUp" data-wow-delay="1200ms" style="text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.85);">-->
-<!--                            --><?php //echo $translations[$lang]['transportation_is_easy']; ?>
-<!--                        </h1>-->
-<!--                        <a href="#services" class="theme-btn btn-style-two wow fadeInUp" data-wow-delay="1800ms">-->
-<!--                            <span class="btn-title">-->
-<!--                                --><?php //echo $translations[$lang]['know_more_us']; ?>
-<!--                                <i class="far fa-arrow-up"></i>-->
-<!--                            </span>-->
-<!--                        </a>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!---->
-<!---->
-<!--                <div class="image-column col-xl-5 col-lg-6 col-md-12">-->
-<!--                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img style="transform:scale(2); position:relative; left:-50%;" src="images/truck7.png"-->
-<!--                                                                                  alt=""></figure>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </section>-->
-    <!-- End Banner Section -->
 
     <!-- Services Section Three-->
     <section id="services" class="services-section-three">
