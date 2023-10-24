@@ -89,6 +89,13 @@ $translations = json_decode($main_page_translations, true);
             height: 100px;
             transform:scale(1.45);
         }
+        .wow.title{
+            text-shadow:
+                    -1px -1px 0 black, /* Top-left shadow */
+                    1px -1px 0 black,  /* Top-right shadow */
+                    -1px 1px 0 black,  /* Bottom-left shadow */
+                    1px 1px 0 black;   /* Bottom-right shadow */
+        }
     </style>
 </head>
 
@@ -245,7 +252,7 @@ $translations = json_decode($main_page_translations, true);
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
-            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/main_truck.png" style="max-width:1300px;" alt=""></figure></div>
+            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/main_truck.png" style="position:relative; left:-300px; top:-90px; max-width:1050px;" alt=""></figure></div>
 
             <div class="content-box">
                 <div class="title-box">
