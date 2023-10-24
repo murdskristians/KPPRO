@@ -240,18 +240,20 @@ $translations = json_decode($main_page_translations, true);
     <!--End Main Header -->
 
     <section class="banner-section-two">
+
         <div class="bg bg-image" style="background-image: url(./images/background.jpg)"></div>
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
             <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/truckfit_main.png" style="max-width:1300px;" alt=""></figure></div>
+
             <div class="content-box">
                 <div class="title-box">
 <!--                    <span class="sub-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Best logistic service in the world</span>-->
                     <h1 class="title wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><?php echo $translations[$lang]['transportation_is_easy']; ?></h1>
                 </div>
                 <a href="page-about.html" class="theme-btn btn-style-one wow fadeInUp animated" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;"><span class="btn-title"><?php echo $translations[$lang]['know_more_us']; ?> <i class="far fa-arrow-up"></i></span></a>
-                <span class="icon icon-plane"></span>
+                <span class="icon icon-plane" style="display: none;"></span>
             </div>
         </div>
     </section>
@@ -315,7 +317,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/refrigerated_transport.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/ref_truck.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
