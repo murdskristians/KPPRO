@@ -245,7 +245,7 @@ $translations = json_decode($main_page_translations, true);
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
-            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/truckfit_main.png" style="max-width:1300px;" alt=""></figure></div>
+            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/main_truck.png" style="max-width:1300px;" alt=""></figure></div>
 
             <div class="content-box">
                 <div class="title-box">
@@ -317,7 +317,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/ref_truck.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/ref_truck_2.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
@@ -335,7 +335,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/container_truck.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
