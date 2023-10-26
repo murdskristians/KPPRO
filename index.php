@@ -91,12 +91,13 @@ $translations = json_decode($main_page_translations, true);
         }
         .wow.title{
             text-shadow:
-                    -1px -1px 0 black, /* Top-left shadow */
-                    1px -1px 0 black,  /* Top-right shadow */
-                    -1px 1px 0 black,  /* Bottom-left shadow */
-                    1px 1px 0 black;   /* Bottom-right shadow */
+                    -1px -1px 0 gray, /* Top-left shadow */
+                    1px -1px 0 gray,  /* Top-right shadow */
+                    -1px 1px 0 gray,  /* Bottom-left shadow */
+                    1px 1px 0 gray;   /* Bottom-right shadow */
         }
     </style>
+
 </head>
 
 <body>
@@ -113,7 +114,7 @@ $translations = json_decode($main_page_translations, true);
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt="KP PRO Logo"
+                    <div class="logo"><a href="#"><img src="images/logo.png" alt="KP PRO Logo"
                                                                     title="KP PRO"></a></div>
                 </div>
 
@@ -163,7 +164,7 @@ $translations = json_decode($main_page_translations, true);
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="index-old.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    <div class="nav-logo"><a href="#"><img src="images/logo.png" alt="" title=""></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
 
@@ -207,7 +208,7 @@ $translations = json_decode($main_page_translations, true);
             <button class="close-search"><span class="fa fa-times"></span></button>
 
             <div class="search-inner">
-                <form method="post" action="index-old.html">
+                <form method="post" action="#">
                     <div class="form-group">
                         <input type="search" name="search-field" value="" placeholder="Search..." required="">
                         <button type="submit"><i class="fa fa-search"></i></button>
@@ -223,7 +224,7 @@ $translations = json_decode($main_page_translations, true);
                 <div class="inner-container">
                     <!--Logo-->
                     <div class="logo">
-                        <a href="index-old.html" title=""><img src="images/logo.png" alt="" title=""></a>
+                        <a href="#" title=""><img src="images/logo.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -246,7 +247,7 @@ $translations = json_decode($main_page_translations, true);
     </header>
     <!--End Main Header -->
 
-    <section class="banner-section-two">
+    <section class="banner-section-two" style="display: none;">
 
         <div class="bg bg-image" style="background-image: url(./images/background.jpg)"></div>
         <div class="bottom-shape"></div>
@@ -259,8 +260,26 @@ $translations = json_decode($main_page_translations, true);
 <!--                    <span class="sub-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Best logistic service in the world</span>-->
                     <h1 class="title wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><?php echo $translations[$lang]['transportation_is_easy']; ?></h1>
                 </div>
-                <a href="page-about.html" class="theme-btn btn-style-one wow fadeInUp animated" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;"><span class="btn-title"><?php echo $translations[$lang]['know_more_us']; ?> <i class="far fa-arrow-up"></i></span></a>
+                <a href="#services" class="theme-btn btn-style-one wow fadeInUp animated" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;"><span class="btn-title"><?php echo $translations[$lang]['know_more_us']; ?> <i class="far fa-arrow-up"></i></span></a>
                 <span class="icon icon-plane" style="display: none;"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="banner-section">
+        <div class="bg bg-image" style="background-image: url(./images/scania_bg.jpg)"></div>
+        <div class="bottom-lines"></div>
+
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="info-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                    <i class="icon lnr-icon-history"></i>
+                    <h1 class="count">24</h1>
+                    <div class="text">Hours <br>Service</div>
+                </div>
+                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">Experience the<br> Best Logistic &amp;<br> Transport</h1>
+                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><span class="btn-title">Know More us <i class="far fa-arrow-up"></i></span></a>
+
             </div>
         </div>
     </section>
@@ -328,8 +347,7 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['refrigerated_transport']; ?></a>
+                                <h6 class="title"><?php echo $translations[$lang]['refrigerated_transport']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['controlled_transport']; ?></div>
@@ -346,8 +364,7 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['ocean_fright']; ?></a>
+                                <h6 class="title"><?php echo $translations[$lang]['ocean_fright']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['platform_deliveries']; ?></div>
@@ -364,8 +381,7 @@ $translations = json_decode($main_page_translations, true);
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-delivery-truck-4"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['large']; ?></a>
+                                <h6 class="title"><?php echo $translations[$lang]['large']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['low_platforms']; ?></div>
@@ -563,7 +579,7 @@ $translations = json_decode($main_page_translations, true);
                     <!--Footer Column-->
                     <div class="footer-column col-xl-4 col-lg-4">
                         <div class="footer-widget about-widget">
-                            <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt=""></a></div>
+                            <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
                                 <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
                                 <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.lv">info@kppro.lv</a><br>
