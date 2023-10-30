@@ -274,12 +274,15 @@ $translations = json_decode($main_page_translations, true);
             <div class="content-box">
                 <div class="info-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
                     <i class="icon lnr-icon-history"></i>
-                    <h1 class="count">24</h1>
-                    <div class="text">Hours <br>Service</div>
+                    <h1 class="count"><?php echo $translations[$lang]['hours_service']; ?></h1>
+                    <div class="text"><?php echo $translations[$lang]['experience_text']; ?></div>
                 </div>
-                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">Experience the<br> Best Logistic &amp;<br> Transport</h1>
-                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><span class="btn-title">Know More us <i class="far fa-arrow-up"></i></span></a>
-
+                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <?php echo $translations[$lang]['experience_text']; ?>
+                </h1>
+                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <span class="btn-title"><?php echo $translations[$lang]['know_more_button']; ?></span>
+                </a>
             </div>
         </div>
     </section>

@@ -41,7 +41,10 @@ $main_page_translations = '{
         "form_phone": "Ieraksti telefona numuru",
         "form_message": "Ieraksti ziņu",
         "response1": "Paldies par ziņu!", 
-        "response2": "Mēs atbildēsim 2 darba dienu laikā."
+        "response2": "Mēs atbildēsim 2 darba dienu laikā.",
+        "hours_service": "24 Stundas <br>Pakalpojums",
+        "experience_text": "Izpētiet Labāko Loģistikas un <br> Transporta Piedāvājumu",
+        "know_more_button": "Uzziniet Vairāk Par Mums <i class=\"far fa-arrow-up\"></i>"
     },
     "en": {
         "head_title": "KP PRO",
@@ -84,7 +87,10 @@ $main_page_translations = '{
         "form_phone": "Enter Phone",
         "form_message": "Enter Message",
         "response1": "Thank you for message!", 
-        "response2": "We will answer within 2 working days."
+        "response2": "We will answer within 2 working days.",
+        "hours_service": "24 Hours <br>Service",
+        "experience_text": "Experience the<br> Best Logistic &amp;<br> Transport",
+        "know_more_button": "Know More us <i class=\"far fa-arrow-up\"></i>"
     },
     "de": {
         "head_title": "KP PRO",
@@ -127,7 +133,10 @@ $main_page_translations = '{
         "form_phone": "Telefon eingeben",
         "form_message": "Nachricht eingeben",
         "response1": "Vielen Dank für Ihre Nachricht!", 
-        "response2": "Wir werden innerhalb von 2 Arbeitstagen antworten."    
+        "response2": "Wir werden innerhalb von 2 Arbeitstagen antworten.",
+        "hours_service": "24 Stunden <br>Dienst",
+        "experience_text": "Erleben Sie die<br> Beste Logistik &amp;<br> Transport",
+        "know_more_button": "Mehr über uns erfahren <i class=\"far fa-arrow-up\"></i>"  
     },
     "cn": {
         "head_title": "KP PRO",
@@ -170,6 +179,9 @@ $main_page_translations = '{
         "form_phone": "输入电话",
         "form_message": "输入信息",
         "response1": "感谢您的留言！", 
-        "response2": "我们将在2个工作日内回复。"
+        "response2": "我们将在2个工作日内回复。",
+        "hours_service": "24小时<br>服务",
+        "experience_text": "体验最佳<br>物流和运输",
+        "know_more_button": "了解更多我们 <i class=\"far fa-arrow-up\"></i>"
     }
 }';
