@@ -80,6 +80,12 @@ function setActiveButton(el) {
 
 // Check if there is a stored active button ID and apply 'active' class
 let storedButtonId = localStorage.getItem('activeButton');
+
+// Set default button ID here if nothing in local storage
+if (storedButtonId === 'null') {
+    storedButtonId = 'en_btn';
+}
+
 if (storedButtonId) {
     let activeButton = document.getElementById(storedButtonId);
     if (activeButton) {
