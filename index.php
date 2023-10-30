@@ -29,6 +29,75 @@ $translations = json_decode($main_page_translations, true);
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
     <!--[if lt IE 9]>
     <script src="js/respond.js"></script><![endif]-->
+
+    <style>
+        .service-block-three .content-box{
+            padding-top:100px !important;
+        }
+        .icon_1{
+            background-image:url('/images/insurance_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon_2{
+            background-image:url('/images/customs_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon_3{
+            background-image:url('/images/truck_icon.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .icon-box::after{
+            display: none;
+        }
+        .theme-btn{
+            cursor: pointer;
+        }
+        .cosco_logo{
+            background-image:url('/images/cosco-shipping-logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .msc_logo{
+            background-image:url('/images/msc-logo.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:100px;
+            height: 100px;
+        }
+        .evergreen_logo{
+            background-image:url('/images/evergreen-logo.svg');
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+            width:190px;
+            height: 100px;
+            transform:scale(1.45);
+        }
+        .wow.title{
+            text-shadow:
+                    -1px -1px 0 gray, /* Top-left shadow */
+                    1px -1px 0 gray,  /* Top-right shadow */
+                    -1px 1px 0 gray,  /* Bottom-left shadow */
+                    1px 1px 0 gray;   /* Bottom-right shadow */
+        }
+    </style>
+
 </head>
 
 <body>
@@ -45,7 +114,7 @@ $translations = json_decode($main_page_translations, true);
             <!-- Main box -->
             <div class="main-box">
                 <div class="logo-box">
-                    <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt="KP PRO Logo"
+                    <div class="logo"><a href="#"><img src="images/logo.png" alt="KP PRO Logo"
                                                                     title="KP PRO"></a></div>
                 </div>
 
@@ -95,7 +164,7 @@ $translations = json_decode($main_page_translations, true);
             <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
             <nav class="menu-box">
                 <div class="upper-box">
-                    <div class="nav-logo"><a href="index-old.html"><img src="images/logo.png" alt="" title=""></a></div>
+                    <div class="nav-logo"><a href="#"><img src="images/logo.png" alt="" title=""></a></div>
                     <div class="close-btn"><i class="icon fa fa-times"></i></div>
                 </div>
 
@@ -139,7 +208,7 @@ $translations = json_decode($main_page_translations, true);
             <button class="close-search"><span class="fa fa-times"></span></button>
 
             <div class="search-inner">
-                <form method="post" action="index-old.html">
+                <form method="post" action="#">
                     <div class="form-group">
                         <input type="search" name="search-field" value="" placeholder="Search..." required="">
                         <button type="submit"><i class="fa fa-search"></i></button>
@@ -155,7 +224,7 @@ $translations = json_decode($main_page_translations, true);
                 <div class="inner-container">
                     <!--Logo-->
                     <div class="logo">
-                        <a href="index-old.html" title=""><img src="images/logo.png" alt="" title=""></a>
+                        <a href="#" title=""><img src="images/logo.png" alt="" title=""></a>
                     </div>
 
                     <!--Right Col-->
@@ -178,46 +247,47 @@ $translations = json_decode($main_page_translations, true);
     </header>
     <!--End Main Header -->
 
-    <!-- Banner Section -->
-    <section class="banner-section-three">
-        <div class="bg bg-image" style="background-image: url(./images/main-slider/3.jpg)"></div>
+    <section class="banner-section-two" style="display: none;">
+
+        <div class="bg bg-image" style="background-image: url(./images/background.jpg)"></div>
         <div class="bottom-shape"></div>
 
         <div class="auto-container">
-            <div class="row">
-                <!-- Content Column -->
-                <div class="content-column col-xl-7 col-lg-12 col-md-12 col-sm-12">
-                    <div class="content-box">
-                        <div class="exp-box wow zoomIn" data-wow-delay="2500ms">
-                            <div class="text"><?php echo $translations[$lang]['shipments_delivered']; ?></div>
-                            <span class="count">4000++</span>
-                        </div>
-                        <h1 class="title wow fadeInUp" data-wow-delay="1200ms">
-                            <?php echo $translations[$lang]['transportation_is_easy']; ?>
-                        </h1>
-                        <a href="#services" class="theme-btn btn-style-two wow fadeInUp" data-wow-delay="1800ms">
-                            <span class="btn-title">
-                                <?php echo $translations[$lang]['know_more_us']; ?>
-                                <i class="far fa-arrow-up"></i>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+            <div class="image-box wow slideInRight animated" data-wow-delay="2000ms" style="visibility: visible; animation-delay: 2000ms; animation-name: slideInRight;"><figure class="image"><img src="images/main_truck.png" style="position:relative; left:-300px; top:-90px; max-width:1050px;" alt=""></figure></div>
 
-                <div class="image-column col-xl-5 col-lg-6 col-md-12">
-                    <figure class="image wow fadeInLeft" data-wow-delay="2s"><img src="images/main-slider/truck2.png"
-                                                                                  alt=""></figure>
+            <div class="content-box">
+                <div class="title-box">
+<!--                    <span class="sub-title wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Best logistic service in the world</span>-->
+                    <h1 class="title wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><?php echo $translations[$lang]['transportation_is_easy']; ?></h1>
                 </div>
+                <a href="#services" class="theme-btn btn-style-one wow fadeInUp animated" data-wow-delay="1200ms" style="visibility: visible; animation-delay: 1200ms; animation-name: fadeInUp;"><span class="btn-title"><?php echo $translations[$lang]['know_more_us']; ?> <i class="far fa-arrow-up"></i></span></a>
+                <span class="icon icon-plane" style="display: none;"></span>
             </div>
         </div>
     </section>
-    <!-- End Banner Section -->
+
+    <section class="banner-section">
+        <div class="bg bg-image" style="background-image: url(./images/scania_bg.jpg)"></div>
+        <div class="bottom-lines"></div>
+
+        <div class="auto-container">
+            <div class="content-box">
+                <div class="info-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                    <i class="icon lnr-icon-history"></i>
+                    <h1 class="count">24</h1>
+                    <div class="text">Hours <br>Service</div>
+                </div>
+                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">Experience the<br> Best Logistic &amp;<br> Transport</h1>
+                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><span class="btn-title">Know More us <i class="far fa-arrow-up"></i></span></a>
+
+            </div>
+        </div>
+    </section>
+
 
     <!-- Services Section Three-->
     <section id="services" class="services-section-three">
-        <div class="anim-icons">
-            <span class="icon icon-plane-6"></span>
-        </div>
+
         <div class="auto-container">
             <div class="upper-box">
                 <div class="row">
@@ -234,8 +304,9 @@ $translations = json_decode($main_page_translations, true);
                     <div class="content-column col-lg-6">
                         <div class="inner-column">
                             <div class="exp-box">
-                                <i class="fade-icon flaticon-delivery-box-4"></i>
-                                <i class="icon flaticon-delivery-box-4"></i>
+                                <div class="icon_3"></div>
+<!--                                <i class="fade-icon flaticon-delivery-box-4"></i>-->
+<!--                                <i class="icon flaticon-delivery-box-4"></i>-->
                                 <h4 class="title"><?php echo $translations[$lang]['kppro_has_been1']; ?><span
                                             class="color1"><?php echo $translations[$lang]['kppro_has_been2']; ?></span><?php echo $translations[$lang]['kppro_has_been3']; ?>
                                 </h4>
@@ -272,12 +343,11 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-1.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/ref_truck_2.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-airplane-2"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['refrigerated_transport']; ?></a>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
+                                <h6 class="title"><?php echo $translations[$lang]['refrigerated_transport']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['controlled_transport']; ?></div>
@@ -290,12 +360,11 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-2.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/container_truck.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-cargo-boat"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['ocean_fright']; ?></a>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
+                                <h6 class="title"><?php echo $translations[$lang]['ocean_fright']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['platform_deliveries']; ?></div>
@@ -308,12 +377,11 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/resource/service3-3.jpg" alt=""></a></figure>
+                                <figure class="image"><a><img src="images/platform_truck.jpg" alt=""></a></figure>
                             </div>
                             <div class="content-box">
-                                <div class="icon-box"><i class="icon flaticon-delivery-truck-4"></i></div>
-                                <h6 class="title"><a
-                                            href="page-service-details.html"><?php echo $translations[$lang]['large']; ?></a>
+                                <div class="icon-box" style="display: none;"><i class="icon flaticon-delivery-truck-4"></i></div>
+                                <h6 class="title"><?php echo $translations[$lang]['large']; ?>
                                 </h6>
                                 <div class="inner">
                                     <div class="text"><?php echo $translations[$lang]['low_platforms']; ?></div>
@@ -337,7 +405,10 @@ $translations = json_decode($main_page_translations, true);
                 <!-- Feature Block Three -->
                 <div class="feature-block-three col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon-box"><i class="icon flaticon-maps"></i></div>
+                        <div class="icon-box">
+<!--                            <i class="icon flaticon-maps"></i>-->
+                            <div class="icon_1"></div>
+                        </div>
                         <h6 class="title"><?php echo $translations[$lang]['cargo_insurance']; ?></h6>
                         <div class="text">
                             <?php echo $translations[$lang]['comprehensive_insurance']; ?>
@@ -348,7 +419,10 @@ $translations = json_decode($main_page_translations, true);
                 <!-- Feature Block Three -->
                 <div class="feature-block-three col-lg-4 col-md-6 col-sm-12">
                     <div class="inner-box">
-                        <div class="icon-box"><i class="icon flaticon-logistics-9"></i></div>
+                        <div class="icon-box">
+<!--                            <i class="icon flaticon-logistics-9"></i>-->
+                            <div class="icon_2"></div>
+                        </div>
                         <h6 class="title"><?php echo $translations[$lang]['customs_formalities']; ?></h6>
                         <div class="text">
                             <?php echo $translations[$lang]['handle_all']; ?>
@@ -379,10 +453,25 @@ $translations = json_decode($main_page_translations, true);
                     <!--clients carousel-->
                     <ul class="clients-carousel owl-carousel owl-theme">
                         <li class="client-block"><a href="#"><img src="images/clients/CmaCgm.jpg" alt=""></a></li>
-                        <li class="client-block"><a href="#"><img src="images/clients/Cosco.png" alt=""></a></li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="cosco_logo"></div>
+                            </a>
+                        </li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="msc_logo"></div>
+                            </a>
+                        </li>
+                        <li class="client-block">
+                            <a href="#">
+                                <div class="evergreen_logo"></div>
+                            </a>
+                        </li>
+
                         <li class="client-block"><a href="#"><img src="images/clients/Depo.png" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/Emc.jpg" alt=""></a></li>
-                        <li class="client-block"><a href="#"><img src="images/clients/Intercars.png" alt=""></a></li>
+                        <li class="client-block"><a href="#"><img src="images/ic_new_logo.jpg" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/YangMing.jpg" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/Lidl.png" alt=""></a></li>
                         <li class="client-block"><a href="#"><img src="images/clients/MaerskLine.png" alt=""></a></li>
@@ -490,7 +579,7 @@ $translations = json_decode($main_page_translations, true);
                     <!--Footer Column-->
                     <div class="footer-column col-xl-4 col-lg-4">
                         <div class="footer-widget about-widget">
-                            <div class="logo"><a href="index-old.html"><img src="images/logo.png" alt=""></a></div>
+                            <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
                                 <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
                                 <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.lv">info@kppro.lv</a><br>
@@ -509,7 +598,7 @@ $translations = json_decode($main_page_translations, true);
 
 
 <!-- Scroll To Top -->
-<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>
+<!--<div class="scroll-to-top scroll-to-target" data-target="html"><span class="fa fa-angle-up"></span></div>-->
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
