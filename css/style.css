@@ -701,7 +701,7 @@ li {
 
 .auto-container {
   position: static;
-  max-width: var(--container-width);
+  /*max-width: var(--container-width);*/
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
@@ -2553,7 +2553,7 @@ Main Header
   display: block;
   text-align: center;
   opacity: 1;
-  color: #000000;
+  color: white;
   font-size: 15px;
   line-height: 30px;
   font-weight: 700;
@@ -3336,7 +3336,7 @@ Header Style One
 }
 .header-style-three .sticky-header .main-menu .navigation > li.current > a,
 .header-style-three .sticky-header .main-menu .navigation > li:hover > a {
-  color: var(--theme-color-dark);
+  color: white;
 }
 
 /*** 
@@ -3368,6 +3368,7 @@ Sticky Header
 
 .sticky-header .logo {
   padding: 10px 0;
+  z-index: 9999;
 }
 .sticky-header .logo img {
   max-height: 40px;
@@ -3400,13 +3401,12 @@ Sticky Header
   color: var(--theme-color-light);
 }
 
-.sticky-header .outer-box,
 .sticky-header .navbar-header {
   display: none;
 }
 
 .sticky-header .mobile-nav-toggler {
-  color: var(--theme-color-dark);
+  color: white;
 }
 
 @media only screen and (min-width: 768px) {
@@ -3440,6 +3440,13 @@ Sticky Header
 @media only screen and (max-width: 1023px) {
   .mobile-nav-toggler {
     display: block;
+  }
+  .nav.main-menu{
+    /*visibility: hidden;*/
+    display: none !important;
+  }
+  .nav-outer{
+    justify-content: end;
   }
 }
 

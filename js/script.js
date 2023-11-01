@@ -38,18 +38,21 @@ var THEMEMASCOT = {};
 			var siteHeader = $('.header-style-one');
 			var scrollLink = $('.scroll-to-top');
 			var sticky_header = $('.main-header .sticky-header');
-			if (windowpos > 100) {
+
+			// Removed main nav and set sticky to be on all the time
+
+			// if (windowpos > 100) {
 				sticky_header.addClass("fixed-header animated slideInDown");
-				scrollLink.fadeIn(300);
-			}else {
-				sticky_header.removeClass("fixed-header animated slideInDown");
-				scrollLink.fadeOut(300);
-			}
-			if (windowpos > 1) {
-				siteHeader.addClass("fixed-header");
-			}else {
+				// scrollLink.fadeIn(300);
+			// }else {
+			// 	sticky_header.removeClass("fixed-header animated slideInDown");
+			// 	scrollLink.fadeOut(300);
+			// }
+			// if (windowpos > 1) {
+			// 	siteHeader.addClass("fixed-header");
+			// }else {
 				siteHeader.removeClass("fixed-header");
-			}
+			// }
 		}
 	}
 	headerStyle();
