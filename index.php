@@ -113,14 +113,9 @@ $translations = json_decode($main_page_translations, true);
         <div class="header-lower">
             <!-- Main box -->
             <div class="main-box">
-                <div class="logo-box">
-                    <div class="logo"><a href="#"><img src="images/logo.png" alt="KP PRO Logo"
-                                                                    title="KP PRO"></a></div>
-                </div>
 
                 <!--Nav Box-->
-                <div class="nav-outer">
-
+                <div class="nav-outer" style="display: flex; justify-content: end;">
                     <nav class="nav main-menu">
                         <ul class="navigation">
                             <li class="current"><a
@@ -129,30 +124,9 @@ $translations = json_decode($main_page_translations, true);
                             <li><a href="#partners"><?php echo $translations[$lang]['navigation_partners']; ?></a></li>
                             <li><a href="#contact"><?php echo $translations[$lang]['navigation_contact']; ?></a></li>
                         </ul>
-                        <div class="header__inner-languages">
-                            <a class="header__inner-lang" id="en_btn">EN</a>
-                            <a class="header__inner-lang" id="lv_btn">LV</a>
-                            <a class="header__inner-lang" id="de_btn">DE</a>
-                            <a class="header__inner-lang" id="cn_btn">CN</a>
-                        </div>
                     </nav>
-
-                    <div class="outer-box">
-
-                        <a href="tel:+37129714481" class="info-btn">
-                            <i class="icon fa fa-phone"></i>
-                            <small>Call Us Now</small> <span class="text-nowrap">+371 29714481</span>
-
-                        </a>
-
-                        <a href="#contact" class="theme-btn btn-style-one"><span
-                                    class="btn-title"><?php echo $translations[$lang]['get_a_quote']; ?><i
-                                        class="lnr-icon-arrow-up"></i></span></a>
-
-                        <!-- Mobile Nav toggler -->
-                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
-                    </div>
                 </div>
+
             </div>
         </div>
         <!-- End Header Lower -->
@@ -219,7 +193,7 @@ $translations = json_decode($main_page_translations, true);
         <!-- End Header Search -->
 
         <!-- Sticky Header  -->
-        <div class="sticky-header">
+        <div class="sticky-header" style="background-color: black;">
             <div class="auto-container">
                 <div class="inner-container">
                     <!--Logo-->
@@ -228,18 +202,41 @@ $translations = json_decode($main_page_translations, true);
                     </div>
 
                     <!--Right Col-->
-                    <div class="nav-outer">
+                    <div class="nav-outer" style="width: 100%;display: flex;">
                         <!-- Main Menu -->
-                        <nav class="main-menu">
-                            <div class="navbar-collapse show collapse clearfix">
-                                <ul class="navigation clearfix">
+                        <nav class="nav main-menu">
+<!--                            <div class="navbar-collapse show collapse clearfix">-->
+                                <ul class="navigation clearfix" style="display: flex;justify-content: center;align-items: center;">
                                     <!--Keep This Empty / Menu will come through Javascript-->
                                 </ul>
+<!--                            </div>-->
+
+                            <div class="header__inner-languages">
+                                <a class="header__inner-lang" id="en_btn">EN</a>
+                                <a class="header__inner-lang" id="lv_btn">LV</a>
+                                <a class="header__inner-lang" id="de_btn">DE</a>
+                                <a class="header__inner-lang" id="cn_btn">CN</a>
                             </div>
                         </nav><!-- Main Menu End-->
 
-                        <!--Mobile Navigation Toggler-->
-                        <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+
+
+
+
+                        <div class="outer-box">
+                            <a href="tel:+37129714481" class="info-btn">
+                                <i class="icon fa fa-phone"></i>
+                                <small>Call Us Now</small> <span class="text-nowrap">+371 29714481</span>
+
+                            </a>
+
+                            <a href="#contact" class="theme-btn btn-style-one"><span
+                                        class="btn-title"><?php echo $translations[$lang]['get_a_quote']; ?><i
+                                            class="lnr-icon-arrow-up"></i></span></a>
+
+                            <!--Mobile Navigation Toggler-->
+                            <div class="mobile-nav-toggler"><span class="icon lnr-icon-bars"></span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -274,12 +271,15 @@ $translations = json_decode($main_page_translations, true);
             <div class="content-box">
                 <div class="info-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
                     <i class="icon lnr-icon-history"></i>
-                    <h1 class="count">24</h1>
-                    <div class="text">Hours <br>Service</div>
+                    <h1 class="count"><?php echo $translations[$lang]['hours_service']; ?></h1>
+                    <div class="text"><?php echo $translations[$lang]['experience_text']; ?></div>
                 </div>
-                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">Experience the<br> Best Logistic &amp;<br> Transport</h1>
-                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;"><span class="btn-title">Know More us <i class="far fa-arrow-up"></i></span></a>
-
+                <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
+                    <?php echo $translations[$lang]['experience_text']; ?>
+                </h1>
+                <a href="#services" class="theme-btn btn-style-two wow fadeInUp animated" data-wow-delay="600ms" style="visibility: visible; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <span class="btn-title"><?php echo $translations[$lang]['know_more_button']; ?></span>
+                </a>
             </div>
         </div>
     </section>
