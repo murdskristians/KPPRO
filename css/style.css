@@ -2410,6 +2410,14 @@ Main Header
     padding: 0 20px;
   }
 }
+@media (max-width: 767.98px) {
+  .auto-container .inner-container {
+    height: 70px !important;
+  }
+  .sticky-header.fixed-header{
+    height: 70px !important;
+  }
+}
 .header-top .top-left {
   position: relative;
   display: -webkit-box;
@@ -3198,6 +3206,13 @@ Header Style One
   margin-right: 30px;
   margin-bottom: -40px;
 }
+
+@media only screen and (max-width: 724px) {
+  .sticky-header .logo img {
+    max-height: 50px !important;
+  }
+}
+
 @media only screen and (max-width: 1400px) {
   .header-style-three .logo-box {
     background-color: #f2f2f2;
@@ -4177,7 +4192,7 @@ Section Title
 }
 @media (max-width: 767.98px) {
   .banner-section .info-box .count {
-    font-size: 74px;
+    font-size: 30px;
   }
 }
 .banner-section .info-box .text {
