@@ -705,6 +705,7 @@ li {
   padding: 0px 15px;
   margin: 0 auto;
   width: 100%;
+  max-width: 2000px;
 }
 
 .small-container {
@@ -2748,6 +2749,7 @@ Main Header
 }
 .main-header .outer-box .theme-btn {
   margin-left: 35px;
+  height: 100%;
 }
 
 .main-header .ui-btn-outer {
@@ -3271,6 +3273,7 @@ Header Style One
 }
 
 .header-style-three .outer-box {
+  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3361,6 +3364,7 @@ Sticky Header
 }
 
 .sticky-header.fixed-header {
+  height: 100px;
   opacity: 1;
   z-index: 9999;
   visibility: visible;
@@ -3371,7 +3375,7 @@ Sticky Header
   z-index: 9999;
 }
 .sticky-header .logo img {
-  max-height: 40px;
+  max-height: 70px;
 }
 .sticky-header .nav-outer {
   position: relative;

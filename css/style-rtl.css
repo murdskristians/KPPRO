@@ -3338,6 +3338,7 @@ Sticky Header
 }
 
 .sticky-header.fixed-header {
+  height: 100px;
   opacity: 1;
   z-index: 9999;
   visibility: visible;
