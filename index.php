@@ -96,6 +96,16 @@ $translations = json_decode($main_page_translations, true);
                     -1px 1px 0 gray,  /* Bottom-left shadow */
                     1px 1px 0 gray;   /* Bottom-right shadow */
         }
+
+        .service-block-three .image-box .image {
+            height:100%;
+        }
+        .service-block-three .image-box .image img{
+            height: 100%;
+        }
+        .service-block-three .image-box{
+            height: 100%;
+        }
     </style>
 
 </head>
@@ -343,7 +353,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/ref_truck_2.jpg" alt=""></a></figure>
+                                <figure class="image"><img src="images/ref_truck_2.jpg" alt=""></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-airplane-2"></i></div>
@@ -360,7 +370,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/container_truck.jpg" alt=""></a></figure>
+                                <figure class="image"><img src="images/container_truck.jpg" alt=""></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-cargo-boat"></i></div>
@@ -377,7 +387,7 @@ $translations = json_decode($main_page_translations, true);
                     <div class="service-block-three col-lg-4 col-md-6">
                         <div class="inner-box">
                             <div class="image-box">
-                                <figure class="image"><a><img src="images/platform_truck.jpg" alt=""></a></figure>
+                                <figure class="image"><img src="images/platform_truck.jpg" alt=""></figure>
                             </div>
                             <div class="content-box">
                                 <div class="icon-box" style="display: none;"><i class="icon flaticon-delivery-truck-4"></i></div>
