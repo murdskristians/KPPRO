@@ -169,7 +169,7 @@ $translations = json_decode($main_page_translations, true);
                         <div class="contact-info-box">
                             <span class="icon lnr-icon-envelope1"></span>
                             <span class="title"><?php echo $translations[$lang]['send_email']; ?></span>
-                            <a href="mailto:info@kppro.lv">info@kppro.lv</a>
+                            <a href="mailto:info@kppro.eu">info@kppro.eu</a>
                         </div>
                     </li>
                     <li>
@@ -279,10 +279,10 @@ $translations = json_decode($main_page_translations, true);
 
         <div class="auto-container">
             <div class="content-box">
-                <div class="info-box wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">
+                <div class="info-box wow fadeInLeft animated" style="display:none; visibility: visible; animation-name: fadeInLeft;">
                     <i class="icon lnr-icon-history"></i>
-                    <h1 class="count"><?php echo $translations[$lang]['hours_service']; ?></h1>
-                    <div class="text"><?php echo $translations[$lang]['experience_text']; ?></div>
+                    <h1 style="display:none;" class="count"><?php echo $translations[$lang]['hours_service']; ?></h1>
+                    <div style="display:none;" class="text"><?php echo $translations[$lang]['experience_text']; ?></div>
                 </div>
                 <h1 class="title wow fadeInUp animated" data-wow-delay="300ms" style="visibility: visible; animation-delay: 300ms; animation-name: fadeInUp;">
                     <?php echo $translations[$lang]['experience_text']; ?>
@@ -592,7 +592,7 @@ $translations = json_decode($main_page_translations, true);
                             <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
                                 <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
-                                <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.lv">info@kppro.lv</a><br>
+                                <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.eu">info@kppro.eu</a><br>
                                 </li>
                             </ul>
                         </div>
