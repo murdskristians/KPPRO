@@ -1,7 +1,7 @@
 <?php
 
-include $_SERVER['DOCUMENT_ROOT'] . "/admin/server/db.php";
-global $con;
+//include $_SERVER['DOCUMENT_ROOT'] . "/admin/server/db.php";
+//global $con;
 
 if(isset($_POST['set_session'])){
     set_session($_POST['lang']);
