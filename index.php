@@ -169,7 +169,7 @@ $translations = json_decode($main_page_translations, true);
                         <div class="contact-info-box">
                             <span class="icon lnr-icon-envelope1"></span>
                             <span class="title"><?php echo $translations[$lang]['send_email']; ?></span>
-                            <a href="mailto:info@kppro.eu">info@kppro.eu</a>
+                            <a href="mailto:transport@kppro.eu">transport@kppro.eu</a>
                         </div>
                     </li>
                     <li>
@@ -592,7 +592,7 @@ $translations = json_decode($main_page_translations, true);
                             <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
                                 <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
-                                <li><i class="far fa-envelope"></i> <a href="mailto:info@kppro.eu">info@kppro.eu</a><br>
+                                <li><i class="far fa-envelope"></i> <a href="mailto:transport@kppro.eu">transport@kppro.eu</a><br>
                                 </li>
                             </ul>
                         </div>
