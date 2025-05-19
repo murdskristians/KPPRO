@@ -161,7 +161,7 @@ $translations = json_decode($main_page_translations, true);
                         <div class="contact-info-box">
                             <i class="icon lnr-icon-phone-handset"></i>
                             <span class="title"><?php echo $translations[$lang]['call_now']; ?></span>
-                            <a href="tel:+37129714481">+371 29714481</a>
+                            <a href="tel:+37126256438">+371 26256438</a>
                         </div>
                     </li>
                     <li>
@@ -234,9 +234,9 @@ $translations = json_decode($main_page_translations, true);
 
 
                         <div class="outer-box">
-                            <a href="tel:+37129714481" class="info-btn">
+                            <a href="tel:+37126256438" class="info-btn">
                                 <i class="icon fa fa-phone"></i>
-                                <small>Call Us Now</small> <span class="text-nowrap">+371 29714481</span>
+                                <small>Call Us Now</small> <span class="text-nowrap">+371 26256438</span>
 
                             </a>
 
@@ -591,7 +591,7 @@ $translations = json_decode($main_page_translations, true);
                         <div class="footer-widget about-widget">
                             <div class="logo"><a href="#"><img src="images/logo.png" alt=""></a></div>
                             <ul class="contact-info-list">
-                                <li><i class="far fa-phone"></i> <a href="tel:+37129714481">+371 29714481</a><br></li>
+                                <li><i class="far fa-phone"></i> <a href="tel:+37126256438">+371 26256438</a><br></li>
                                 <li><i class="far fa-envelope"></i> <a href="mailto:transport@kppro.eu">transport@kppro.eu</a><br>
                                 </li>
                             </ul>
